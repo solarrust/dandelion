@@ -14,7 +14,9 @@ global.ProjectName = new function ProjectName() { // eslint-disable-line
 	};
 
 	this.helpers = {};
-	this.modules = {};
+	this.modules = {
+		// PageEffects: require('./modules/PageEffects'),
+	};
 
 	// Startup
 	$(() => {

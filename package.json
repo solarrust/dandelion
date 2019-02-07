@@ -1,10 +1,10 @@
 {
-	"name": "sp.starter",
+	"name": "DandelionSeed",
 	"version": "1.0.0",
-	"description": "Boilerplate for html+js+css apps by Sborka Project",
+	"description": "Created by Alena Batitskaya",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/sborkaproject/SP.Starter"
+		"url": "https://github.com/solarrust/dandelion"
 	},
 	"scripts": {
 		"start": "gulp",

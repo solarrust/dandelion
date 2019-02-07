@@ -1,0 +1,98 @@
+.header
+	position: relative
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	box-sizing: border-box
+	min-height: 768px
+	padding: 20px 60px 40px
+	background-image: linear-gradient(to top right, $light-blue 5%, $blue)
+	background-color: $blue
+	color: #fff
+	&__content
+		margin-bottom: 95px
+
+
+.logo
+	max-width: 138px
+	max-height: 75px
+	margin-bottom: 70px
+
+
+.header-content
+	position: relative
+	&__text
+		position: absolute
+		left: 55%
+		bottom: 0
+		max-width: 450px
+		color: rgba(#fff, 0.6)
+		font-size: 16px
+		letter-spacing: -0.8px
+		line-height: 2.2
+
+.title
+	max-width: 900px
+	font-size: 124px
+	font-weight: 400
+	line-height: 0.9
+	&__highlight
+		display: block
+		color: $mint
+
+.dandelion
+	position: absolute
+	right: 0
+	top: 0
+	width: 436px
+	height: 482px
+
+.menu
+	position: relative
+	display: flex
+	max-height: 45px
+	&__item
+		line-height: 1.4
+	&__link
+		display: inline-block
+		color: inherit
+		text-decoration: none
+		&:after
+			content: ""
+			display: block
+			padding-top: 3px
+			border-bottom: 1px solid transparent
+			background-color: transparent
+			transition: border 0.3s
+		&:hover
+			color: inherit
+			&:after
+				border-color: #fff
+				transition: none
+
+.nav
+	counter-reset: menu-counter
+	display: flex
+	flex-direction: column
+	flex-wrap: wrap
+	margin-left: 50px
+	&__item
+		flex: 0 0 auto
+		height: calc(50% - 3px)
+		&:nth-child(n+3)
+			margin-left: 55px
+		&:not(:nth-child(odd))
+			margin-top: 5px
+	&__link
+		&:before
+			content: '0'counter(menu-counter)
+			counter-increment: menu-counter
+			display: inline-block
+			margin-right: 5px
+
+.sub-nav
+	position: absolute
+	right: 0
+	top: 0
+	&__item
+		text-align: right
