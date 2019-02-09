@@ -21,46 +21,27 @@
 		font-size: 12px
 		color: $blue
 	&:nth-child(odd)
-		margin-left: 35%
+		&:before
+			margin-left: 35%
+		& .solution__text
+			margin-left: 35%
 		& .solution__title
-			&:before,
-			&:after
-				content: ''
-				position: absolute
-				top: 50%
-				display: inline-block
-				height: 1px
-				background-image: linear-gradient(to right, rgba($blue, 0.2), $blue)
-			&:before
-				width: calc(61% -  40px)
-				margin-right: 40px
-				left: -355px
-			&:after
-				width: calc(82% - 40px)
-				right: 0
-	&:nth-child(3)
-		& .solution__title
-			&:after
-				width: calc(45% - 40px)
-	&:last-child
-		& .solution__title
-			&:after
-				width: calc(55% - 40px)
-	&__title
-		&:after
-			content: ''
-			position: absolute
-			top: 50%
-			display: inline-block
-			height: 1px
-			background-image: linear-gradient(to right, rgba($blue, 0.2), $blue)
-		&:after
-			width: calc(77% - 40px)
-			right: 0
+			margin: 0 40px
 	&:not(:last-child)
 		margin-bottom: 125px
+	&__block
+		display: flex
+		align-items: center
+	&__line
+		flex: 1 0 auto
+		height: 1px
+		background-image: linear-gradient(to right, rgba($blue, 0.2), $blue)
+		&:first-child
+			flex-basis: calc(35% - 40px)
+			flex-grow: 0
 	&__title
 		position: relative
+		margin-right: 40px
 	&__text
 		margin-top: 35px
 		font-size: 14px
