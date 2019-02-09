@@ -2,22 +2,22 @@
 	<div class="section__content">
 		<h2 class="press__title title-xs">Press about us</h2>
 		<div class="press-list press__list">
-			<a href="https://www.forbes.com/sites/forbescommunicationscouncil/2019/01/02/marketing-was-a-driving-force-in-the-ico-hype-and-crypto-crash-and-may-lead-its-rebirth/#11f327a54748" class="press-list__link _forbes" target="_blank">
+			<a href="https://www.forbes.com/sites/forbescommunicationscouncil/2019/01/02/marketing-was-a-driving-force-in-the-ico-hype-and-crypto-crash-and-may-lead-its-rebirth/#11f327a54748" class="press-list__link _gradient" target="_blank">
 				<img src="./media/img/forbes_white@2x.png" alt="" class="press-list__logo">
 			</a>
-			<a href="https://www.investing.com/news/cryptocurrency-news/how-not-to-fail-after-an-ico-5-top-tips-from-ibrcs-experts-1551560" class="press-list__link _investing" target="_blank">
+			<a href="https://www.investing.com/news/cryptocurrency-news/how-not-to-fail-after-an-ico-5-top-tips-from-ibrcs-experts-1551560" class="press-list__link _gradient" target="_blank">
 				<img src="./media/img/investing@2x.png" alt="" class="press-list__logo">
 			</a>
-			<a href="https://www.ccn.com/few-real-opportunities-to-pay-with-cryptocurrencies-at-the-world-cup/" class="press-list__link _ccn" target="_blank">
+			<a href="https://www.ccn.com/few-real-opportunities-to-pay-with-cryptocurrencies-at-the-world-cup/" class="press-list__link _gradient" target="_blank">
 				<img src="./media/img/ccn@2x.png" alt="" class="press-list__logo">
 			</a>
-			<a href="https://cointelegraph.com/news/for-successful-ico-these-things-must-be-put-in-place" class="press-list__link _telegraph" target="_blank">
+			<a href="https://cointelegraph.com/news/for-successful-ico-these-things-must-be-put-in-place" class="press-list__link _gradient" target="_blank">
 				<img src="./media/img/coin-telegraph@2x.png" alt="" class="press-list__logo">
 			</a>
-			<a href="https://www.fxstreet.com/cryptocurrencies/news/cryptobanks-in-the-global-financial-system-the-future-is-already-upon-us-201808220911" class="press-list__link _fx" target="_blank">
+			<a href="https://www.fxstreet.com/cryptocurrencies/news/cryptobanks-in-the-global-financial-system-the-future-is-already-upon-us-201808220911" class="press-list__link _gradient" target="_blank">
 				<img src="./media/img/fxstreet@2x.png" alt="" class="press-list__logo">
 			</a>
-			<a href="https://www.reuters.com/article/us-sec-blockchain-tokens/digital-currency-start-ups-shrug-off-sec-warning-on-fund-raising-idUSKBN1AD0DE" class="press-list__link _reuters" target="_blank">
+			<a href="https://www.reuters.com/article/us-sec-blockchain-tokens/digital-currency-start-ups-shrug-off-sec-warning-on-fund-raising-idUSKBN1AD0DE" class="press-list__link _gradient" target="_blank">
 				<img src="./media/img/reuters@2x.png" alt="" class="press-list__logo">
 			</a>
 		</div>

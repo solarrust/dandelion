@@ -28,7 +28,7 @@
 	</div>
 	<div class="header__content header-content">
 		<h1 class="header-content__title title">
-			<span class="title__highlight">Holistic solution</span>
+			<span class="_block-highlight">Holistic solution</span>
 			for successfully attracting investments
 		</h1>
 		<p class="header-content__text text">For ventures of any size, from seed-stage startups to companies gearing up for an IPO</p>
