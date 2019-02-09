@@ -1,0 +1,67 @@
+.solutions
+	padding: 213px 60px 140px
+	background-color: $light-gray
+	&__title
+		width: 62%
+	&__subtitle
+		width: 62%
+		margin-top: 40px
+	&__list
+		margin-top: 120px
+		padding: 0 40px 0 245px
+
+.solution-list
+	counter-reset: solution-counter
+
+.solution
+	&:before
+		content: '0'counter(solution-counter)
+		counter-increment: solution-counter
+		+Cinetype
+		font-size: 12px
+		color: $blue
+	&:nth-child(odd)
+		margin-left: 35%
+		& .solution__title
+			&:before,
+			&:after
+				content: ''
+				position: absolute
+				top: 50%
+				display: inline-block
+				height: 1px
+				background-image: linear-gradient(to right, rgba($blue, 0.2), $blue)
+			&:before
+				width: calc(54% -  40px)
+				margin-right: 40px
+				left: -355px
+			&:after
+				width: calc(84% - 40px)
+				right: 0
+	&:nth-child(3)
+		& .solution__title
+			&:after
+				width: calc(51% - 40px)
+	&:last-child
+		& .solution__title
+			&:after
+				width: calc(60% - 40px)
+	&__title
+		&:after
+			content: ''
+			position: absolute
+			top: 50%
+			display: inline-block
+			height: 1px
+			background-image: linear-gradient(to right, rgba($blue, 0.2), $blue)
+		&:after
+			width: calc(79% - 40px)
+			right: 0
+	&:not(:last-child)
+		margin-bottom: 125px
+	&__title
+		position: relative
+	&__text
+		margin-top: 35px
+		font-size: 14px
+		max-width: 510px

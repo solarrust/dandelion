@@ -7,4 +7,5 @@
 
 {% block content %}
 	{% include '../parts/_header.nunj' %}
+	{% include '../parts/_solutions.nunj' %}
 {% endblock content %}

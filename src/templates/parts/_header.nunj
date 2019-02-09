@@ -27,36 +27,44 @@
 		<img src="../media/img/leaf.svg" class="leaf">
 	</div>
 	<div class="header__content header-content">
-		<h1 class="header-content__title title" data-auto-show>
+		<h1 class="header-content__title title">
 			<span class="title__highlight">Holistic solution</span>
 			for successfully attracting investments
 		</h1>
-		<p class="header-content__text" data-auto-show>For ventures of any size, from seed-stage startups to companies gearing up for an IPO</p>
+		<p class="header-content__text text">For ventures of any size, from seed-stage startups to companies gearing up for an IPO</p>
 	</div>
-	<div class="header__menu menu">
-		<p class="menu__item" data-auto-show>Contact us today <br>
-			<a href="mailto:hello@dandelionseed.com" class="menu__link __contact">hello@dandelionseed.com</a></p>
-		<nav class="menu__item nav">
-			<div class="nav__item" data-auto-show>
-				<a href="#solution" class="nav__link menu__link">solution</a>
+	<nav class="header__menu menu">
+		<div class="menu__block">
+			<p class="menu__item">Contact us today</p>
+			<a href="mailto:hello@dandelionseed.com" class="menu__link _mt">hello@dandelionseed.com</a>
+		</div>
+		<nav class="menu__block menu__item nav">
+			<div class="nav__item">
+				<a href="#" class="nav__link menu__link">solution</a>
 			</div>
-			<div class="nav__item" data-auto-show>
-				<a href="#clients" class="nav__link menu__link">clients</a>
+			<div class="nav__item">
+				<a href="#" class="nav__link menu__link">clients</a>
 			</div>
-			<div class="nav__item" data-auto-show>
-				<a href="#plans" class="nav__link menu__link">plans</a>
+			<div class="nav__item">
+				<a href="#" class="nav__link menu__link">plans</a>
 			</div>
-			<div class="nav__item" data-auto-show>
-				<a href="#team" class="nav__link menu__link">team</a>
+			<div class="nav__item">
+				<a href="#" class="nav__link menu__link">team</a>
 			</div>
 		</nav>
-		<div class="sub-nav">
-			<div class="menu__item sub-nav__item" data-auto-show>
-				<a href="" class="menu__link">contacts</a>
+		<div class="menu__block sub-nav">
+			<div class="sub-nav__item menu__item">
+				<a href="#" class="menu__link _reg">contacts</a>
 			</div>
-			<div class="menu__item sub-nav__item" data-auto-show>
-				<a href="" class="menu__link">free consultation</a>
+			<div class="sub-nav__item menu__item">
+				<a href="#" class="menu__link">free consultation</a>
 			</div>
 		</div>
+	</nav>
+	<div class="header__social social">
+		<a href="#" class="social__link _md"></a>
+		<a href="#" class="social__link _ld"></a>
+		<a href="#" class="social__link _tw"></a>
+		<a href="#" class="social__link _fb"></a>
 	</div>
 </header>

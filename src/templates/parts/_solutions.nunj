@@ -1,0 +1,33 @@
+<section class="solutions section">
+	<div class="section__content">
+		<h2 class="section__title">
+			Solution
+		</h2>
+		<h3 class="title-md solutions__title">
+			Our efforts will result in&nbsp;your meetings with <span class="title-md__highlight">investment funds and committees</span>
+		</h3>
+		<p class="section__text solutions__subtitle text">
+			Relying on&nbsp;our vast experience of&nbsp;executing investment deals and our thorough knowledge of&nbsp;what various funds are looking for, we&nbsp;develop a&nbsp;custom strategy for each and every of&nbsp;our clients. This maximizes your prospects of&nbsp;success and cuts down on&nbsp;the time it&nbsp;takes investment funds to&nbsp;review your application.
+		</p>
+		<div class="solutions__list">
+			<ul class="solution-list">
+				<li class="solution">
+					<h4 class="solution__title title-sm">Legal</h4>
+					<p class="solution__text text">Creating a&nbsp;structure that governs the relationship between startups and investors and ensuring that interests of&nbsp;both parties are met.</p>
+				</li>
+				<li class="solution">
+					<h4 class="solution__title title-sm">Marketing</h4>
+					<p class="solution__text text">Professional positioning of&nbsp;the project, development of&nbsp;an&nbsp;efficient marketing strategy and its subsequent implementation boost the project&rsquo;s investment prospects.</p>
+				</li>
+				<li class="solution">
+					<h4 class="solution__title title-sm">Public Relations</h4>
+					<p class="solution__text text">Carefully thought-through PR&nbsp;strategy, where every detail has been examined and fine-tuned, will help establish and popularize your brand, while rifle approach to&nbsp;your target audience will let the funds know about your project well before you apply.</p>
+				</li>
+				<li class="solution">
+					<h4 class="solution__title title-sm">Working with funds</h4>
+					<p class="solution__text text">Presenting the project in a way investment funds easily comprehend and subsequent support to help secure the funding from investment committees.</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>

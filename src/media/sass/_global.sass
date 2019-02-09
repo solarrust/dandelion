@@ -92,3 +92,42 @@
 .force3D
 	transform: translate3d(0,0,0)
 	backface-visibility: hidden
+
+.text
+	font-size: 16px
+	letter-spacing: -0.8px
+	line-height: 1.9
+	opacity: 0.6
+
+.title
+	+Sectra
+	font-size: 124px
+	font-weight: 400
+	line-height: 0.9
+
+.title-md
+	+SectraBook
+	font-size: 64px
+	line-height: 1
+	&__highlight
+		color: $blue
+
+.title-sm
+	+SectraBook
+	font-size: 48px
+
+.section
+	position: relative
+	&__content
+		max-width: 1366px
+		margin: 0 auto
+	&__title
+		position: absolute
+		top: 50%
+		left: -195px
+		+SectraBook
+		font-size: 124px
+		color: $blue
+		transform: rotate(90deg)
+
+
