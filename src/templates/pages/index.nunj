@@ -9,4 +9,5 @@
 	{% include '../parts/_header.nunj' %}
 	{% include '../parts/_solutions.nunj' %}
 	{% include '../parts/_press.nunj' %}
+	{% include '../parts/_clients.nunj' %}
 {% endblock content %}

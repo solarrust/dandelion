@@ -1,0 +1,46 @@
+<section class="section clients">
+	<div class="section__content">
+		<div class="clients__block">
+			<div class="clients__img">
+				<img src="./media/img/man.jpg" alt="">
+			</div>
+			<div class="clients__content">
+				<h2 class="clients__title title-md"><span class="_highlight">We&nbsp;know exactly</span> how to&nbsp;attract investments</h2>
+				<p class="text clients__text">Over 100 teams from all over the world have already gained investments to&nbsp;develop and scale their projects.</p>
+			</div>
+		</div>
+		<div class="main-clients">
+			<div class="clients-list">
+				<div class="clients-list__item client _gradient">
+					<div class="client__logo">
+						<img src="./media/img/insolar@2x.png" alt="">
+					</div>
+					<p class="client__name">insolar</p>
+					<div class="client__num">60</div>
+				</div>
+				<div class="clients-list__item client">
+					<div class="client__logo">
+						<img src="./media/img/crypterium@2x.png" alt="">
+					</div>
+					<p class="client__name">crypterium</p>
+					<div class="client__num">51</div>
+				</div>
+				<div class="clients-list__item client">
+					<div class="client__logo">
+						<img src="./media/img/shivom@2x.png" alt="">
+					</div>
+					<p class="client__name">shivom</p>
+					<div class="client__num">35</div>
+				</div>
+				<div class="clients-list__item client">
+					<div class="client__logo">
+						<img src="./media/img/universa@2x.png" alt="">
+					</div>
+					<p class="client__name">universa</p>
+					<div class="client__num">28</div>
+				</div>
+			</div>
+		</div>
+		<button class="more-btn">more</button>
+	</div>
+</section>

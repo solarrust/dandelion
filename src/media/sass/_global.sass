@@ -124,6 +124,7 @@
 .section
 	position: relative
 	&__content
+		position: relative
 		max-width: 1366px
 		margin: 0 auto
 		padding-left: 60px
@@ -138,11 +139,14 @@
 		transform: rotate(90deg)
 
 ._gradient
+	position: relative
+	z-index: 0
 	&:before
 		content: ''
 		position: absolute
 		left: -1px
 		top: -1px
+		z-index: -1
 		width: 100%
 		height: 100%
 		border: 1px solid transparent
@@ -156,3 +160,7 @@
 
 ._highlight
 	color: $blue
+
+._border
+	border: 1px solid rgba($blue, 0.3)
+	border-radius: 8px
