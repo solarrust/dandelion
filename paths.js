@@ -4,6 +4,7 @@ export default {
 		scripts: 'build/media/js/',
 		styles: 'build/media/css/',
 		images: 'build/media/img/',
+		imagesInline: 'build/media/img/inline',
 		fonts: 'build/media/fonts/',
 		sprites: 'build/media/img/sprites/',
 		svg: 'build/media/svg/',
