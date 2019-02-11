@@ -55,11 +55,21 @@
 	&__logo
 		max-width: 64px
 		height: 40px
-		& img
+		& img,
+		& svg
 			width: auto
 			max-width: 100%
 			max-height: 100%
 			object-fit: contain
+		&._crypterium
+			max-width: 32px
+		&._insolar
+			+sr(insolar)
+		&._shivom
+			+sr(shivom)
+		&._universa
+			+sr(universa)
+			max-width: 36px
 	&__name
 		margin-top: 10px
 		+Cinetype
