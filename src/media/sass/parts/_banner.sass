@@ -1,0 +1,30 @@
+.banner
+	position: relative
+	overflow: hidden
+	padding-top: 60px
+	padding-bottom: 70px
+	color: #fff
+	background-image: linear-gradient(to top right, $light-blue 5%, $blue)
+	background-color: $blue
+	&__title
+		@extend .title-md
+		font-size: 78px
+	&__dandelion
+		@extend .header__dandelion
+		width: 50%
+		height: 100%
+		bottom: 0
+		top: auto
+		right: -50px
+	&__text
+		@extend .header-content__text
+		left: 30%
+		top: 0
+		bottom: auto
+		max-width: 415px
+		padding-top: 10px
+	&__btn
+		margin-top: 40px
+
+.btn-connect
+	border-color: #fff

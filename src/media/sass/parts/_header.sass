@@ -16,6 +16,15 @@
 		position: absolute
 		right: 60px
 		bottom: 125px
+	&__dandelion
+		position: absolute
+		right: 0
+		top: 0
+		width: 31.919%
+		height: 50%
+		& svg
+			width: 100%
+			height: 100%
 
 .logo
 	max-width: 138px
@@ -29,22 +38,10 @@
 		left: 55%
 		bottom: 10px
 		max-width: 450px
+		margin: 0
 		color: #fff
-
-.title
-	max-width: 900px
-	&__highlight
-		display: block
-		color: $mint
-
-.dandelion
-	position: absolute
-	right: 0
-	top: 0
-	width: 31.919%
-	& img
-		width: 100%
-		height: 100%
+	&__title
+		max-width: 900px
 
 .menu
 	position: relative
@@ -55,24 +52,13 @@
 	&__item
 		line-height: 1.4
 	&__link
+		@extend .underline-link
 		display: inline-block
 		color: inherit
 		font-weight: 600
 		text-decoration: none
 		&._reg
 			font-weight: 400
-		&:after
-			content: ""
-			display: block
-			padding-top: 3px
-			border-bottom: 1px solid transparent
-			background-color: transparent
-			transition: border 0.3s
-		&:hover
-			color: inherit
-			&:after
-				border-color: #fff
-				transition: none
 		&._mt
 			margin-top: 5px
 

@@ -1,0 +1,58 @@
+.team
+	padding: 70px 60px
+	background-color: $light-gray
+	&__members
+		display: flex
+		flex-wrap: wrap
+	&__member
+		flex-basis: 50%
+		&:not(:nth-last-child(-n+2))
+			margin-bottom: 60px
+
+.member
+	display: flex
+	align-items: flex-start
+	&__img-box
+		position: relative
+		overflow: hidden
+		border-radius: 50%
+		margin-right: 40px
+	&__content
+		max-width: 62%
+	&__name
+		+SectraBook
+		font-size: 36px
+		line-height: 0.9
+	&__position
+		+SectraBook
+		font-size: 24px
+		line-height: 1.25
+		color: $blue
+
+.socials-list
+	display: flex
+	align-items: flex-start
+	margin-bottom: 20px
+	&__item
+		&:not(:last-child)
+			margin-right: 20px
+	&__link
+		display: block
+		width: 14px
+		height: 14px
+		&._ld
+			width: 12px
+			height: 12px
+		&._t
+			height: 12px
+		&._email
+			height: 10px
+			margin-top: -1px
+		& svg
+			width: 100%
+			max-height: 100%
+			transition: fill 0.3s
+		&:hover
+			& svg
+				fill: $blue
+				transition: none

@@ -1,0 +1,20 @@
+{% macro moreClients(items) %}
+	<div class="more-clients clients__more">
+		<div class="section__content">
+			<button class="less-btn">Less</button>
+			<div class="more-clients__container">
+				{% for client in items %}
+					<div class="more-clients__client more-client">
+						<div class="more-client__block">
+							<span class="more-client__logo _{{ client.logo }}"></span>
+						</div>
+						<div class="more-client__content">
+							<h3 class="more-client__name">{{ client.name }}</h3>
+							<p class="more-client__value">{{ client.value }}</p>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+{% endmacro %}

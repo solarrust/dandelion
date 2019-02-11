@@ -84,7 +84,7 @@
 		@extend .transition-hover
 
 .transition-active
-	transition: color $default-transition-duration $default-transition-function, background $default-transition-duration $default-transition-function, border-color $default-transition-duration $default-transition-function
+	transition: color $default-transition-duration $default-transition-function, background $default-transition-duration $default-transition-function, border-color $default-transition-duration $default-transition-function, fill $default-transition-duration $default-transition-function
 
 .transition-hover
 	transition: none
@@ -94,6 +94,7 @@
 	backface-visibility: hidden
 
 .text
+	margin-top: 40px
 	font-size: 16px
 	letter-spacing: -0.8px
 	line-height: 1.9
@@ -164,3 +165,26 @@
 ._border
 	border: 1px solid rgba($blue, 0.3)
 	border-radius: 8px
+
+.btn
+	@extend ._border
+	padding: 20px 33px
+	+Cinetype
+	font-size: 18px
+	font-weight: 700
+	color: currentColor
+	background: none
+
+.underline-link
+	&:after
+		content: ""
+		display: block
+		padding-top: 3px
+		border-bottom: 1px solid transparent
+		background-color: transparent
+		transition: border 0.3s
+	&:hover
+		color: inherit
+		&:after
+			border-color: currentColor
+			transition: none

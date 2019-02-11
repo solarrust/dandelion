@@ -1,3 +1,5 @@
+{% from "./_more-clients.nunj" import moreClients %}
+
 <section class="section clients">
 	<div class="section__content">
 		<div class="clients__block">
@@ -37,4 +39,5 @@
 		</div>
 		<button class="more-btn">more</button>
 	</div>
+	{{ moreClients(clientsMore) }}
 </section>

@@ -1,0 +1,13 @@
+<section class="section banner">
+	<div class="banner__dandelion">
+		<svg><use xlink:href="#icon-leaf2"></use></svg>
+	</div>
+	<div class="section__content">
+		<h2 class="banner__title">
+			<span class="_block-highlight">Wanna Be</span>
+			The Next Big Thing
+		</h2>
+		<p class="banner__text text">In&nbsp;just 2&nbsp;years we&nbsp;helped our clients raise more than $650 million dollars!</p>
+		<button class="btn-connect banner__btn btn">connect with us</button>
+	</div>
+</section>

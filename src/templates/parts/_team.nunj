@@ -1,0 +1,39 @@
+{% macro team(team) %}
+	<section class="section team">
+		<h2 class="section__title">
+			Team
+		</h2>
+		<div class="section__content">
+			<div class="team__members">
+				{% for member in team %}
+					<div class="team__member member">
+						<div class="member__img-box">
+							<img src="{{ member.photo }}" srcset="{{ member.photo2x }} 2x" alt="{{ member.name }}">
+						</div>
+						<div class="member__content">
+							<ul class="member__socials socials-list">
+								{% if member.socials.ld %}
+									<li class="socials-list__item">
+										<a href="{{ member.socials.ld }}" class="socials-list__link _ld">
+											<svg><use xlink:href="#icon-linkedin"></use></svg>
+										</a>
+									</li>
+								{% endif %}
+								<li class="socials-list__item">
+									<a href="mailto:{{ member.socials.email }}" class="socials-list__link _email"><svg><use xlink:href="#icon-email"></use></svg></a>
+								</li>
+								<li class="socials-list__item">
+									<a href="{{ member.socials.t }}" class="socials-list__link _t">
+										<svg><use xlink:href="#icon-t"></use></svg>
+									</a>
+								</li>
+							</ul>
+							<h3 class="member__name">{{ member.name }}</h3>
+							<h4 class="member__position">{{ member.position }}</h4>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</section>
+{% endmacro %}

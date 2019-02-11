@@ -1,30 +1,382 @@
 {
-	"menuItems": [
+	"clientsMore": [
 		{
-			"name": "Главная",
-			"path": "/"
+			"logo": "paragon",
+			"name": "Paragon",
+			"value": "75, 000, 000"
 		},
 		{
-			"name": "Элемент меню 2",
-			"path": "#"
+			"logo": "mingocoin",
+			"name": "MingoCoin",
+			"value": "20, 000, 000"
 		},
 		{
-			"name": "Элемент меню 3",
-			"path": "#"
+			"logo": "saifu",
+			"name": "Saifu",
+			"value": "13, 023, 514"
 		},
 		{
-			"name": "Элемент меню 4",
-			"path": "#"
+			"logo": "babbletone",
+			"name": "Babbletone",
+			"value": "8, 600, 000"
+		},
+		{
+			"logo": "miniapps",
+			"name": "Miniapps",
+			"value": "5, 299, 691"
+		},
+		{
+			"logo": "storiqa",
+			"name": "Storiqa",
+			"value": "25, 000, 000"
+		},
+		{
+			"logo": "goldmint",
+			"name": "Goldmint",
+			"value": "14, 741, 132"
+		},
+		{
+			"logo": "1worldonline",
+			"name": "1World Online",
+			"value": "10, 807, 031"
+		},
+		{
+			"logo": "socialmedia",
+			"name": "SocialMedia.Market",
+			"value": "8, 462, 740"
+		},
+		{
+			"logo": "genie",
+			"name": "Genie",
+			"value": "5, 500, 000"
+		},
+		{
+			"logo": "cannasos",
+			"name": "CannaSOS",
+			"value": "24, 000, 000"
+		},
+		{
+			"logo": "icos",
+			"name": "ICOS",
+			"value": "14, 600, 000"
+		},
+		{
+			"logo": "micromoney",
+			"name": "Micromoney",
+			"value": "10, 500, 000"
+		},
+		{
+			"logo": "nativevideobox",
+			"name": "Native Video Box",
+			"value": "6, 400, 000"
+		},
+		{
+			"logo": "tokenstars",
+			"name": "Tokenstars",
+			"value": "4, 900, 000"
 		}
 	],
-	"someData": [
+	"teamMembers": [
 		{
-			"title": "Item 1",
-			"text": "Desc 1"
+			"photo": "./media/img/team/evdokimov.jpg",
+			"photo2x": "./media/img/team/evdokimov@2x.jpg",
+			"name": "Nick Evdokimov",
+			"position": "Founder",
+			"socials": {
+				"ld": "https://www.linkedin.com/in/nick-evdokimov-ba5635a7/",
+				"email": "neo@icobox.io",
+				"t": "http://t.me/MOI_Decenturion"
+			}
 		},
 		{
-			"title": "Item 2",
-			"text": "Desc 2"
+			"photo": "./media/img/team/malinovskiy.jpg",
+			"photo2x": "./media/img/team/malinovskiy@2x.jpg",
+			"name": "Dmitriy Malinovskiy",
+			"position": "Chief Financial Officer",
+			"socials": {
+				"ld": "https://www.linkedin.com/in/dmitriy-malinovskiy/",
+				"email": "dmitriy.malinovskiy@icobox.io",
+				"t": "http://t.me/dmalinovskiy"
+			}
+		},
+		{
+			"photo": "./media/img/team/solodukha.jpg",
+			"photo2x": "./media/img/team/solodukha@2x.jpg",
+			"name": "Phil Solodukha",
+			"position": "Field Business Development Director EMEA region",
+			"socials": {
+				"ld": "https://www.linkedin.com/in/philimon-solodukha-61496355/",
+				"email": "phil.solodukha@icobox.io",
+				"t": "http://t.me/ylundo"
+			}
+		},
+		{
+			"photo": "./media/img/team/zaitsev.jpg",
+			"photo2x": "./media/img/team/zaitsev@2x.jpg",
+			"name": "Dima Zaitsev",
+			"position": "Head of International PR",
+			"socials": {
+				"ld": "https://www.linkedin.com/in/dima-zaitsev/",
+				"email": "dima@icobox.io",
+				"t": "http://t.me/forinnov"
+			}
+		},
+		{
+			"photo": "./media/img/team/shamanaev.jpg",
+			"photo2x": "./media/img/team/shamanaev@2x.jpg",
+			"name": "Anton Shamanaev",
+			"position": "Head of Customer Success Department",
+			"socials": {
+				"ld": "https://www.linkedin.com/in/anton-shamanaev-794910b2/",
+				"email": "as@icobox.io",
+				"t": "http://t.me/antonschumann"
+			}
+		},
+		{
+			"photo": "./media/img/team/dikarev.jpg",
+			"photo2x": "./media/img/team/dikarev@2x.jpg",
+			"name": "Artem Dikarev",
+			"position": "Legal Counsel",
+			"socials": {
+				"ld": "https://www.linkedin.com/in/artem-dikarev-4594214/",
+				"email": "artem.dikarev@icobox.io",
+				"t": "http://t.me/Artem_Dikarev"
+			}
+		},
+		{
+			"photo": "./media/img/team/sikachev.jpg",
+			"photo2x": "./media/img/team/sikachev@2x.jpg",
+			"name": "Vasily Sikachev",
+			"position": "Legal Counsel",
+			"socials": {
+				"ld": "https://www.linkedin.com/in/vasily-sikachev-b808191/",
+				"email": "vasily.sikachev@icobox.io",
+				"t": "http://t.me/VasilySikachev"
+			}
+		},
+		{
+			"photo": "./media/img/team/petrov.jpg",
+			"photo2x": "./media/img/team/petrov@2x.jpg",
+			"name": "Aleksandr Petrov",
+			"position": "Marketing Manager",
+			"socials": {
+				"ld": "https://www.linkedin.com/in/alexandr-petrov-024a2179/",
+				"email": "alexandr.petrov@icobox.io",
+				"t": "http://t.me/alexpetrov_m"
+			}
+		},
+		{
+			"photo": "./media/img/team/sezemov.jpg",
+			"photo2x": "./media/img/team/sezemov@2x.jpg",
+			"name": "Mikhail Sezemov",
+			"position": "Marketing Manager",
+			"socials": {
+				"email": "mikhail.sezemov@icobox.io",
+				"t": "http://t.me/MikhailSez"
+			}
+		},
+		{
+			"photo": "./media/img/team/franchi.jpg",
+			"photo2x": "./media/img/team/franchi@2x.jpg",
+			"name": "Nika Franchi",
+			"position": "Copywriting and Localization Lead",
+			"socials": {
+				"ld": "https://www.linkedin.com/in/nikafranchi/",
+				"email": "nika@icobox.io",
+				"t": "http://t.me/Brainika"
+			}
+		},
+		{
+			"photo": "./media/img/team/joo.jpg",
+			"photo2x": "./media/img/team/joo@2x.jpg",
+			"name": "Tyron Joo",
+			"position": "Country Manager (South Korea)",
+			"socials": {
+				"ld": "https://www.linkedin.com/in/tyron-joo-076394165/",
+				"email": "tyron@icobox.io",
+				"t": "http://t.me/rev0317"
+			}
+		},
+		{
+			"photo": "./media/img/team/churina.jpg",
+			"photo2x": "./media/img/team/churina@2x.jpg",
+			"name": "Tatiana Churina",
+			"position": "Web Content Lead",
+			"socials": {
+				"email": "churina@icobox.io",
+				"t": "http://t.me/tatiana_churina"
+			}
+		},
+		{
+			"photo": "./media/img/team/turdumambetov.jpg",
+			"photo2x": "./media/img/team/turdumambetov@2x.jpg",
+			"name": "Turdumambetov Tamirlan",
+			"position": "Regional PR Manager",
+			"socials": {
+				"email": "tamirlan.t@icobox.io",
+				"t": "http://t.me/tm_tima"
+			}
+		},
+		{
+			"photo": "./media/img/team/mastropasqua.jpg",
+			"photo2x": "./media/img/team/mastropasqua@2x.jpg",
+			"name": "Elena Mastropasqua",
+			"position": "Executive Assistant at PR Department",
+			"socials": {
+				"ld": "https://www.linkedin.com/in/elena-mastropasqua-017a2465/",
+				"email": "elena.mastropasqua@icobox.io",
+				"t": "http://t.me/lenaita"
+			}
+		},
+		{
+			"photo": "./media/img/team/spiridonov.jpg",
+			"photo2x": "./media/img/team/spiridonov@2x.jpg",
+			"name": "Georgy Spiridonov",
+			"position": "PR Virtual Assistant",
+			"socials": {
+				"ld": "https://www.linkedin.com/in/georgy-spiridonov-a0aaa2116/",
+				"email": "georgysp@icobox.io",
+				"t": "http://t.me/georgy_sp"
+			}
+		},
+		{
+			"photo": "./media/img/team/zvonarev.jpg",
+			"photo2x": "./media/img/team/zvonarev@2x.jpg",
+			"name": "Alexey Zvonarev",
+			"position": "Writer",
+			"socials": {
+				"email": "alexey.zvonarev@icobox.io",
+				"t": "http://t.me/alexzvonarev"
+			}
+		},
+		{
+			"photo": "./media/img/team/korotkov.jpg",
+			"photo2x": "./media/img/team/korotkov@2x.jpg",
+			"name": "Andrey Korotkov",
+			"position": "Sales Account Executive",
+			"socials": {
+				"email": "andrey.korotkov@icobox.io",
+				"t": "http://t.me/andrey_korotkov_ico"
+			}
+		},
+		{
+			"photo": "./media/img/team/kondrateva.jpg",
+			"photo2x": "./media/img/team/kondrateva@2x.jpg",
+			"name": "Maria Kondrateva",
+			"position": "Event & Travel Manager",
+			"socials": {
+				"ld": "https://www.linkedin.com/in/maria-kondrateva-3138242a/",
+				"email": "maria.kondrateva@icobox.io",
+				"t": "http://t.me/Maria_Kondrateva"
+			}
+		},
+		{
+			"photo": "./media/img/team/moskalyuk.jpg",
+			"photo2x": "./media/img/team/moskalyuk@2x.jpg",
+			"name": "Demid Moskalyuk",
+			"position": "Project Manager",
+			"socials": {
+				"ld": "https://www.linkedin.com/in/demid-moskalyuk-67a290122/",
+				"email": "demid.moskalyuk@icobox.io",
+				"t": "http://t.me/demid_mosk"
+			}
+		},
+		{
+			"photo": "./media/img/team/bybyna.jpg",
+			"photo2x": "./media/img/team/bybyna@2x.jpg",
+			"name": "Alyona Bybyna",
+			"position": "Business Assistant at Sales Department",
+			"socials": {
+				"ld": "https://www.linkedin.com/in/alyona-bybina-a52641170/",
+				"email": "alyona.bybina@icobox.io",
+				"t": "http://t.me/alyonaby"
+			}
+		},
+		{
+			"photo": "./media/img/team/sunka.jpg",
+			"photo2x": "./media/img/team/sunka@2x.jpg",
+			"name": "Dmitrii Sunka",
+			"position": "Sales Manager",
+			"socials": {
+				"email": "dmitrii.sunka@icobox.io",
+				"t": "http://t.me/DmitriiSunka"
+			}
+		},
+		{
+			"photo": "./media/img/team/gainutdinov.jpg",
+			"photo2x": "./media/img/team/gainutdinov@2x.jpg",
+			"name": "Eldar Gainutdinov",
+			"position": "Sales Manager",
+			"socials": {
+				"ld": "https://linkedin.com/in/eldar-gainutdinov",
+				"email": "eldar.gainutdinov@icobox.io",
+				"t": "http://t.me/EldarGain"
+			}
+		},
+		{
+			"photo": "./media/img/team/dekusar.jpg",
+			"photo2x": "./media/img/team/dekusar@2x.jpg",
+			"name": "Maria Dekusar",
+			"position": "Sales Manager",
+			"socials": {
+				"ld": "https://www.linkedin.com/in/maria-dekusar-519148113/",
+				"email": "maria.dekusar@icobox.io",
+				"t": "http://t.me/dekusarmaria"
+			}
+		},
+		{
+			"photo": "./media/img/team/flotskaya.jpg",
+			"photo2x": "./media/img/team/flotskaya@2x.jpg",
+			"name": "Alexandra Flotskaya",
+			"position": "Sales Manager",
+			"socials": {
+				"ld": "https://www.linkedin.com/in/alexandra-flotskaya-20604375/",
+				"email": "alexandra.flotskaya@icobox.io",
+				"t": "http://t.me/alexandreene"
+			}
+		},
+		{
+			"photo": "",
+			"photo2x": "",
+			"name": "Evgeny Nikiforov",
+			"position": "Sales Manager",
+			"socials": {
+				"email": "e.nikiforov@icobox.io",
+				"t": "http://t.me/Irulan"
+			}
+		}
+	],
+	"contacts": [
+		{
+			"name": "New York",
+			"tel": ["+82(2)545-25-60", "+82(2)545-25-60"],
+			"email": "hello@dandelionseed.com",
+			"links": [["medium", "#"], ["linkedin", "#"], ["twitter", "#"], ["facebook", "#"]],
+			"active": true
+		},
+		{
+			"name": "Hong Kong",
+			"tel": ["+82(2)545-25-60", "+82(2)545-25-60"],
+			"email": "hello@dandelionseed.com",
+			"links": [["medium", "#"], ["linkedin", "#"], ["twitter", "#"], ["facebook", "#"]]
+		},
+		{
+			"name": "San Francisco",
+			"tel": ["+82(2)545-25-60", "+82(2)545-25-60"],
+			"email": "hello@dandelionseed.com",
+			"links": [["medium", "#"], ["linkedin", "#"], ["twitter", "#"], ["facebook", "#"]]
+		},
+		{
+			"name": "London",
+			"tel": ["+82(2)545-25-60", "+82(2)545-25-60"],
+			"email": "hello@dandelionseed.com",
+			"links": [["medium", "#"], ["linkedin", "#"], ["twitter", "#"], ["facebook", "#"]]
+		},
+		{
+			"name": "Moskow",
+			"tel": ["+82(2)545-25-60", "+82(2)545-25-60"],
+			"email": "hello@dandelionseed.com",
+			"links": [["medium", "#"], ["linkedin", "#"], ["twitter", "#"], ["facebook", "#"]]
 		}
 	]
 }

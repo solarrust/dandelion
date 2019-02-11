@@ -1,0 +1,80 @@
+.less-btn
+	@extend .more-btn
+	bottom: 185px
+	&:after
+		content: ''
+	&:before
+		content: '← '
+
+.more-clients
+	&__container
+		display: flex
+		flex-wrap: wrap
+		justify-content: flex-start
+
+.more-client
+	display: flex
+	flex-basis: 15%
+	align-items: flex-start
+	margin-bottom: 40px
+	+Cinetype
+	font-size: 14px
+	&:not(:nth-child(5n))
+		margin-right: 5%
+	&__block
+		flex-basis: 31px
+		overflow: hidden
+		margin-right: 20px
+	&__logo
+		display: block
+		width: 28px
+		height: 28px
+		background-repeat: no-repeat
+		&._paragon
+			+sr(paragon)
+			width: 30px
+		&._mingocoin
+			+sr(mingocoin)
+			width: 31px
+		&._saifu
+			+sr(saifu)
+			width: 19px
+		&._babbletone
+			+sr(babbletone)
+		&._miniapps
+			+sr(miniapps)
+		&._storiqa
+			+sr(storiqa)
+		&._goldmint
+			+sr(goldmint)
+		&._1worldonline
+			+sr(1worldonline)
+			width: 30px
+			height: 17px
+		&._socialmedia
+			+sr(socialmedia)
+		&._genie
+			+sr(genie)
+			width: 30px
+		&._cannasos
+			+sr(cannasos)
+		&._icos
+			+sr(icos)
+			width: 24px
+		&._micromoney
+			+sr(micromoney)
+			width: 30px
+			height: 24px
+		&._nativevideobox
+			+sr(nativevideobox)
+			width: 27px
+		&._tokenstars
+			+sr(tokenstars)
+			width: 29px
+	&__name
+		margin: 0
+		font-size: inherit
+	&__value
+		font-weight: 500
+		&:before
+			content: '$ '

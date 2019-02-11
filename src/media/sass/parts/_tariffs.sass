@@ -1,0 +1,71 @@
+.tariffs
+	padding-top: 140px
+	padding-bottom: 70px
+	background-color: $light-gray
+	&__title
+		max-width: 62%
+	&__text
+		max-width: 62%
+	&__container
+		margin-top: 80px
+
+.tariffs-container
+	display: flex
+	justify-content: space-between
+
+.tariff
+	@extend ._border
+	display: flex
+	flex-direction: column
+	flex: 0 0 auto
+	width: 38.5%
+	padding: 60px
+	border-color: transparent
+	background-color: #fff
+	&._main
+		background-color: rgba($blue, 0.1)
+	&__name
+		+SectraBook
+		font-size: 36px
+	&__price
+		+Cinetype
+		color: $blue
+		font-size: 72px
+		&:before
+			content: '$'
+			font-size: 36px
+	&__unit
+		font-size: 48px
+	&__includes
+		flex-grow: 1
+		margin-top: 40px
+	&__list-title
+		+Cinetype
+		font-size: 16px
+		font-weight: 700
+	&__btn-block
+		margin-top: 40px
+		color: $blue
+
+.includes-list
+	margin-top: 30px
+	+Cinetype
+	&__item
+		position: relative
+		padding-left: 26px
+		font-size: 16px
+		line-height: 1.5
+		&:before
+			content: ''
+			position: absolute
+			left: 0
+			top: 4px
+			display: inline-block
+			width: 16px
+			height: 16px
+			background: inline('check.svg')
+		&:not(:last-child)
+			margin-bottom: 20px
+
+.btn-tariff
+	border-color: $blue

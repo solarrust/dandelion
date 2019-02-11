@@ -1,6 +1,7 @@
 {% extends "../ext/base.nunj" %}
 
 {% from "../parts/_menu.nunj" import menu %}
+{% from "../parts/_team.nunj" import team %}
 
 {# Пример расширения существующего блока #}
 {#{% block title %}Home {{ super() }}{% endblock title %}#}
@@ -10,4 +11,8 @@
 	{% include '../parts/_solutions.nunj' %}
 	{% include '../parts/_press.nunj' %}
 	{% include '../parts/_clients.nunj' %}
+	{% include '../parts/_banner.nunj' %}
+	{% include '../parts/_tariffs.nunj' %}
+	{{ team(teamMembers) }}
+	{% include '../parts/_footer.nunj' %}
 {% endblock content %}
