@@ -78,8 +78,8 @@
 	],
 	"teamMembers": [
 		{
-			"photo": "./media/img/team/evdokimov.jpg",
-			"photo2x": "./media/img/team/evdokimov@2x.jpg",
+			"photo": "evdokimov.jpg",
+			"photo2x": "evdokimov@2x.jpg",
 			"name": "Nick Evdokimov",
 			"position": "Founder",
 			"socials": {
@@ -89,8 +89,8 @@
 			}
 		},
 		{
-			"photo": "./media/img/team/malinovskiy.jpg",
-			"photo2x": "./media/img/team/malinovskiy@2x.jpg",
+			"photo": "malinovskiy.jpg",
+			"photo2x": "malinovskiy@2x.jpg",
 			"name": "Dmitriy Malinovskiy",
 			"position": "Chief Financial Officer",
 			"socials": {
@@ -100,8 +100,8 @@
 			}
 		},
 		{
-			"photo": "./media/img/team/solodukha.jpg",
-			"photo2x": "./media/img/team/solodukha@2x.jpg",
+			"photo": "solodukha.jpg",
+			"photo2x": "solodukha@2x.jpg",
 			"name": "Phil Solodukha",
 			"position": "Field Business Development Director EMEA region",
 			"socials": {
@@ -111,8 +111,8 @@
 			}
 		},
 		{
-			"photo": "./media/img/team/zaitsev.jpg",
-			"photo2x": "./media/img/team/zaitsev@2x.jpg",
+			"photo": "zaitsev.jpg",
+			"photo2x": "zaitsev@2x.jpg",
 			"name": "Dima Zaitsev",
 			"position": "Head of International PR",
 			"socials": {
@@ -122,8 +122,8 @@
 			}
 		},
 		{
-			"photo": "./media/img/team/shamanaev.jpg",
-			"photo2x": "./media/img/team/shamanaev@2x.jpg",
+			"photo": "shamanaev.jpg",
+			"photo2x": "shamanaev@2x.jpg",
 			"name": "Anton Shamanaev",
 			"position": "Head of Customer Success Department",
 			"socials": {
@@ -133,8 +133,8 @@
 			}
 		},
 		{
-			"photo": "./media/img/team/dikarev.jpg",
-			"photo2x": "./media/img/team/dikarev@2x.jpg",
+			"photo": "dikarev.jpg",
+			"photo2x": "dikarev@2x.jpg",
 			"name": "Artem Dikarev",
 			"position": "Legal Counsel",
 			"socials": {
@@ -144,8 +144,8 @@
 			}
 		},
 		{
-			"photo": "./media/img/team/sikachev.jpg",
-			"photo2x": "./media/img/team/sikachev@2x.jpg",
+			"photo": "sikachev.jpg",
+			"photo2x": "sikachev@2x.jpg",
 			"name": "Vasily Sikachev",
 			"position": "Legal Counsel",
 			"socials": {
@@ -155,8 +155,8 @@
 			}
 		},
 		{
-			"photo": "./media/img/team/petrov.jpg",
-			"photo2x": "./media/img/team/petrov@2x.jpg",
+			"photo": "petrov.jpg",
+			"photo2x": "petrov@2x.jpg",
 			"name": "Aleksandr Petrov",
 			"position": "Marketing Manager",
 			"socials": {
@@ -166,8 +166,8 @@
 			}
 		},
 		{
-			"photo": "./media/img/team/sezemov.jpg",
-			"photo2x": "./media/img/team/sezemov@2x.jpg",
+			"photo": "sezemov.jpg",
+			"photo2x": "sezemov@2x.jpg",
 			"name": "Mikhail Sezemov",
 			"position": "Marketing Manager",
 			"socials": {
@@ -176,8 +176,8 @@
 			}
 		},
 		{
-			"photo": "./media/img/team/franchi.jpg",
-			"photo2x": "./media/img/team/franchi@2x.jpg",
+			"photo": "franchi.jpg",
+			"photo2x": "franchi@2x.jpg",
 			"name": "Nika Franchi",
 			"position": "Copywriting and Localization Lead",
 			"socials": {
@@ -187,8 +187,8 @@
 			}
 		},
 		{
-			"photo": "./media/img/team/joo.jpg",
-			"photo2x": "./media/img/team/joo@2x.jpg",
+			"photo": "joo.jpg",
+			"photo2x": "joo@2x.jpg",
 			"name": "Tyron Joo",
 			"position": "Country Manager (South Korea)",
 			"socials": {
@@ -198,8 +198,8 @@
 			}
 		},
 		{
-			"photo": "./media/img/team/churina.jpg",
-			"photo2x": "./media/img/team/churina@2x.jpg",
+			"photo": "churina.jpg",
+			"photo2x": "churina@2x.jpg",
 			"name": "Tatiana Churina",
 			"position": "Web Content Lead",
 			"socials": {
@@ -208,8 +208,8 @@
 			}
 		},
 		{
-			"photo": "./media/img/team/turdumambetov.jpg",
-			"photo2x": "./media/img/team/turdumambetov@2x.jpg",
+			"photo": "turdumambetov.jpg",
+			"photo2x": "turdumambetov@2x.jpg",
 			"name": "Turdumambetov Tamirlan",
 			"position": "Regional PR Manager",
 			"socials": {
@@ -218,8 +218,8 @@
 			}
 		},
 		{
-			"photo": "./media/img/team/mastropasqua.jpg",
-			"photo2x": "./media/img/team/mastropasqua@2x.jpg",
+			"photo": "mastropasqua.jpg",
+			"photo2x": "mastropasqua@2x.jpg",
 			"name": "Elena Mastropasqua",
 			"position": "Executive Assistant at PR Department",
 			"socials": {
@@ -229,8 +229,8 @@
 			}
 		},
 		{
-			"photo": "./media/img/team/spiridonov.jpg",
-			"photo2x": "./media/img/team/spiridonov@2x.jpg",
+			"photo": "spiridonov.jpg",
+			"photo2x": "spiridonov@2x.jpg",
 			"name": "Georgy Spiridonov",
 			"position": "PR Virtual Assistant",
 			"socials": {
@@ -240,8 +240,8 @@
 			}
 		},
 		{
-			"photo": "./media/img/team/zvonarev.jpg",
-			"photo2x": "./media/img/team/zvonarev@2x.jpg",
+			"photo": "zvonarev.jpg",
+			"photo2x": "zvonarev@2x.jpg",
 			"name": "Alexey Zvonarev",
 			"position": "Writer",
 			"socials": {
@@ -250,8 +250,8 @@
 			}
 		},
 		{
-			"photo": "./media/img/team/korotkov.jpg",
-			"photo2x": "./media/img/team/korotkov@2x.jpg",
+			"photo": "korotkov.jpg",
+			"photo2x": "korotkov@2x.jpg",
 			"name": "Andrey Korotkov",
 			"position": "Sales Account Executive",
 			"socials": {
@@ -260,8 +260,8 @@
 			}
 		},
 		{
-			"photo": "./media/img/team/kondrateva.jpg",
-			"photo2x": "./media/img/team/kondrateva@2x.jpg",
+			"photo": "kondrateva.jpg",
+			"photo2x": "kondrateva@2x.jpg",
 			"name": "Maria Kondrateva",
 			"position": "Event & Travel Manager",
 			"socials": {
@@ -271,8 +271,8 @@
 			}
 		},
 		{
-			"photo": "./media/img/team/moskalyuk.jpg",
-			"photo2x": "./media/img/team/moskalyuk@2x.jpg",
+			"photo": "moskalyuk.jpg",
+			"photo2x": "moskalyuk@2x.jpg",
 			"name": "Demid Moskalyuk",
 			"position": "Project Manager",
 			"socials": {
@@ -282,8 +282,8 @@
 			}
 		},
 		{
-			"photo": "./media/img/team/bybyna.jpg",
-			"photo2x": "./media/img/team/bybyna@2x.jpg",
+			"photo": "bybyna.jpg",
+			"photo2x": "bybyna@2x.jpg",
 			"name": "Alyona Bybyna",
 			"position": "Business Assistant at Sales Department",
 			"socials": {
@@ -293,8 +293,8 @@
 			}
 		},
 		{
-			"photo": "./media/img/team/sunka.jpg",
-			"photo2x": "./media/img/team/sunka@2x.jpg",
+			"photo": "sunka.jpg",
+			"photo2x": "sunka@2x.jpg",
 			"name": "Dmitrii Sunka",
 			"position": "Sales Manager",
 			"socials": {
@@ -303,8 +303,8 @@
 			}
 		},
 		{
-			"photo": "./media/img/team/gainutdinov.jpg",
-			"photo2x": "./media/img/team/gainutdinov@2x.jpg",
+			"photo": "gainutdinov.jpg",
+			"photo2x": "gainutdinov@2x.jpg",
 			"name": "Eldar Gainutdinov",
 			"position": "Sales Manager",
 			"socials": {
@@ -314,8 +314,8 @@
 			}
 		},
 		{
-			"photo": "./media/img/team/dekusar.jpg",
-			"photo2x": "./media/img/team/dekusar@2x.jpg",
+			"photo": "dekusar.jpg",
+			"photo2x": "dekusar@2x.jpg",
 			"name": "Maria Dekusar",
 			"position": "Sales Manager",
 			"socials": {
@@ -325,8 +325,8 @@
 			}
 		},
 		{
-			"photo": "./media/img/team/flotskaya.jpg",
-			"photo2x": "./media/img/team/flotskaya@2x.jpg",
+			"photo": "flotskaya.jpg",
+			"photo2x": "flotskaya@2x.jpg",
 			"name": "Alexandra Flotskaya",
 			"position": "Sales Manager",
 			"socials": {
@@ -336,8 +336,8 @@
 			}
 		},
 		{
-			"photo": "",
-			"photo2x": "",
+			"photo": "flotskaya.jpg",
+			"photo2x": "flotskaya@2x.jpg",
 			"name": "Evgeny Nikiforov",
 			"position": "Sales Manager",
 			"socials": {

@@ -1,10 +1,10 @@
 {% from "./_more-clients.nunj" import moreClients %}
 
-<section class="section clients">
+<section class="section clients" data-scroll-target="clients">
 	<div class="section__content">
 		<div class="clients__block">
 			<div class="clients__img">
-				<img src="./media/img/man.jpg" alt="">
+				<img data-src="./media/img/man.jpg" alt="">
 			</div>
 			<div class="clients__content">
 				<h2 class="clients__title title-md"><span class="_highlight">We&nbsp;know exactly</span> how to&nbsp;attract investments</h2>
@@ -37,7 +37,7 @@
 				</div>
 			</div>
 		</div>
-		<button class="more-btn">more</button>
+		<button class="more-btn" data-more>more</button>
 	</div>
 	{{ moreClients(clientsMore) }}
 </section>

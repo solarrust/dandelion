@@ -1,4 +1,13 @@
+.popup-opener
+	@extend .animated
+	display: inline-block
+	cursor: pointer
+	padding: 5px 15px
+	border: 1px solid #333
+	border-radius: 5px
+
 .popups-wrapper
+	display: none
 	position: fixed
 	top: 0
 	left: 0
@@ -28,6 +37,20 @@
 		font-size: $default-font-size
 
 .popup
+	display: none
 	position: relative
+	width: 90vw
+	max-width: 960px
 	padding: 20px
 	background: #F1F1F1
+	box-sizing: border-box
+	&__text
+		min-height: 65vh
+		background-color: #ffeb3b
+		&:nth-child(2n+1)
+			background-color: #333
+
+._desktop
+	.popup-opener
+		&:hover
+			opacity: .75

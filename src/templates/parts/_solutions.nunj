@@ -1,4 +1,4 @@
-<section class="solutions section">
+<section class="solutions section" data-scroll-target='story'>
 	<h2 class="section__title">
 		Solution
 	</h2>

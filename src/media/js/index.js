@@ -13,15 +13,22 @@ global.ProjectName = new function ProjectName() { // eslint-disable-line
 		Callback: require('./classes/Callback')
 	};
 
-	this.helpers = {};
+	this.helpers = {
+		ScrollHelper: require('./helpers/ScrollHelper')
+	};
 	this.modules = {
 		Switchers: require('./modules/Switchers'),
+		LazyLoad: require('./modules/LazyLoad'),
+		Popups: require('./modules/Popups'),
+		Validations: require('./modules/Validations'),
+		HideOnScrolls: require('./modules/HideOnScrolls'),
+		Header: require('./modules/Header'),
+		Clients: require('./modules/Clients'),
 	};
 
 	// Startup
 	$(() => {
-		// Remove _loading modificator
-		this.dom.$html.removeClass('_loading');
+		this.modules.LazyLoad.start();
 	});
 }();
 

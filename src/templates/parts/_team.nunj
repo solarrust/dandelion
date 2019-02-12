@@ -1,5 +1,5 @@
 {% macro team(team) %}
-	<section class="section team">
+	<section class="section team" data-scroll-target="team">
 		<h2 class="section__title">
 			Team
 		</h2>
@@ -8,7 +8,7 @@
 				{% for member in team %}
 					<div class="team__member member">
 						<div class="member__img-box">
-							<img src="{{ member.photo }}" srcset="{{ member.photo2x }} 2x" alt="{{ member.name }}">
+							<img data-src="./media/img/team/{{ member.photo }}|./media/img/team/{{ member.photo2x }}" alt="{{ member.name }}">
 						</div>
 						<div class="member__content">
 							<ul class="member__socials socials-list">

@@ -6,6 +6,10 @@
 // 		color: #333
 // 		border-bottom: 1px dotted transparent
 
+html
+	&._popup-opened
+		overflow: hidden
+
 .clearfix
 	// zoom: 1
 	&:after
@@ -159,6 +163,9 @@
 	display: block
 	color: $mint
 
+._light
+	color: $mint
+
 ._highlight
 	color: $blue
 
@@ -189,3 +196,6 @@
 		&:after
 			border-color: currentColor
 			transition: none
+
+.grecaptcha-badge
+	display: none

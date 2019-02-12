@@ -34,11 +34,11 @@ Switchers.prototype = {
 			if (!openerIsActive) {
 				$closeTabs
 					.stop()
-					.fadeOut()
+					.fadeOut(0.3)
 					.removeClass(OPENED);
 				$openTab
 					.stop()
-					.fadeIn()
+					.fadeIn(0.3)
 					.addClass(OPENED);
 
 				$opener.addClass(ACTIVE);

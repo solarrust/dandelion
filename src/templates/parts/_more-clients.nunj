@@ -1,6 +1,6 @@
 {% macro moreClients(items) %}
 	<div class="more-clients clients__more">
-		<div class="section__content">
+		<div class="section__content" data-less>
 			<button class="less-btn">Less</button>
 			<div class="more-clients__container">
 				{% for client in items %}

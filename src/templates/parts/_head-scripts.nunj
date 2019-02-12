@@ -62,7 +62,7 @@
 			var xhr = new XMLHttpRequest();
 			xhr.open('GET', 'media/svg/sprite.svg', true);
 			xhr.overrideMimeType('image/svg+xml');
-			
+
 			xhr.onreadystatechange = function(){
 				if(xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
 					var container = document.createElement('div');
@@ -77,11 +77,12 @@
 						}
 					}
 
-					waitForBody();	
+					waitForBody();
 				};
 			}
 
 			xhr.send('');
 		})();
 	</script>
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 {% endmacro %}

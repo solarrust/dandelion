@@ -1,6 +1,6 @@
 {% from "../parts/_contacts-tabs.nunj" import contactsTabs %}
 
-<footer class="footer">
+<footer class="footer" data-scroll-target="contacts">
 	<h3 class="footer__title title-md">
 		Contact <span class="_highlight">us Today</span>
 	</h3>

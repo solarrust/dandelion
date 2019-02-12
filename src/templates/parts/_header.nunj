@@ -8,37 +8,39 @@
 		<svg><use xlink:href="#icon-leaf"></use></svg>
 	</div>
 	<div class="header__content header-content">
-		<h1 class="header-content__title title">
-			<span class="_block-highlight">Holistic solution</span>
-			for successfully attracting investments
+		<h1 class="header-content__title title" data-text>
+			<span class="_block-highlight">Holistic solution</span> for successfully attracting investments
 		</h1>
 		<p class="header-content__text text">For ventures of any size, from seed-stage startups to companies gearing up for an IPO</p>
 	</div>
-	<nav class="header__menu menu">
-		<div class="menu__block">
+	<nav class="header__menu menu" data-transform-on-scroll>
+		<div class="menu__logo">
+			<svg><use xlink:href="#icon-logo-black"></use></svg>
+		</div>
+		<div class="menu__block _hide">
 			<p class="menu__item">Contact us today</p>
 			<a href="mailto:hello@dandelionseed.com" class="menu__link _mt">hello@dandelionseed.com</a>
 		</div>
 		<nav class="menu__block menu__item nav">
 			<div class="nav__item">
-				<a href="#" class="nav__link menu__link">solution</a>
+				<a href="#" class="nav__link menu__link" data-scroll-to='.solution'>solution</a>
 			</div>
 			<div class="nav__item">
-				<a href="#" class="nav__link menu__link">clients</a>
+				<a href="#" class="nav__link menu__link" data-scroll-to=".clients">clients</a>
 			</div>
 			<div class="nav__item">
-				<a href="#" class="nav__link menu__link">plans</a>
+				<a href="#" class="nav__link menu__link" data-scroll-to=".tariffs">plans</a>
 			</div>
 			<div class="nav__item">
-				<a href="#" class="nav__link menu__link">team</a>
+				<a href="#" class="nav__link menu__link" data-scroll-to=".team">team</a>
 			</div>
 		</nav>
 		<div class="menu__block sub-nav">
 			<div class="sub-nav__item menu__item">
-				<a href="#" class="menu__link _reg">contacts</a>
+				<a href="#" class="menu__link _reg" data-scroll-to=".footer">contacts</a>
 			</div>
 			<div class="sub-nav__item menu__item">
-				<a href="#" class="menu__link">free consultation</a>
+				<a href="#" class="menu__link" data-popup-opener="contact-form1">free consultation</a>
 			</div>
 		</div>
 	</nav>
