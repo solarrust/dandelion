@@ -2,12 +2,31 @@
 	padding: 70px 60px
 	background-color: $light-gray
 	&__members
+		@extend .no-scroll
 		display: flex
 		flex-wrap: wrap
 	&__member
 		flex-basis: 50%
 		&:not(:nth-last-child(-n+2))
 			margin-bottom: 60px
+	+max-screen($breakpoint-md)
+		padding: 70px 0
+		&__members
+			flex-direction: column
+			overflow-x: scroll
+			max-height: calc(190px * 6)
+			margin-left: -60px
+			margin-right: -60px
+			padding-left: 60px
+			padding-right: 60px
+		&__member
+			flex-basis: auto
+			width: 465px
+			height: 125px
+			&:nth-last-child(-n+2)
+				margin-bottom: 60px
+			&:not(:nth-child(-n+6))
+				margin-left: 70px
 
 .member
 	display: flex
@@ -15,6 +34,7 @@
 	&__img-box
 		position: relative
 		overflow: hidden
+		flex: 0 0 auto
 		width: 100px
 		height: 100px
 		border-radius: 50%

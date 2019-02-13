@@ -1,40 +1,42 @@
 {% macro contactsTabs(data) %}
 	<div class="tabs" data-switcher data-switcher-mode="acc">
-		<div class="tab-openers">
-			{% for item in data %}
-				<span class="tab-openers__item {% if item.active %}_active{% endif %}" data-switcher-tab-opener="{{ item.name }}">{{ item.name }}</span>
-			{% endfor %}
+		<div class="tab-container">
+			<div class="tab-openers">
+				{% for item in data %}
+					<span class="tab-openers__item {% if item.active %}_active{% endif %}" data-switcher-tab-opener="{{ item.name }}">{{ item.name }}</span>
+				{% endfor %}
+			</div>
 		</div>
 
 		<div class="tabs">
 			{% for item in data %}
 				<div class="tabs__item tab {% if item.active %}_opened{% endif %}" data-switcher-tab="{{ item.name }}">
 					<div class="tab-content">
-						<div class="tab__content-item">
-							<p class="tab__item-name">Phone</p>
+						<div class="tab-content__item">
+							<p class="tab-content__item-name">Phone</p>
 							{% for tel in item.tel %}
 								<p>
 									<a href="tel:{{tel}}" class="tab__link">{{tel}}</a>
 								</p>
 							{% endfor %}
 						</div>
-						<div class="tab__content-item">
-							<div class="tab__content-item">
-								<p class="tab__item-name">E-mail</p>
-								<a href="mailto:{{item.email}}" class="tab__link">{{item.email}}</a>
-								<ul class="footer__social-list social-list">
-									{% for link in item.links %}
+						<div class="tab-content__item tab-content__emails">
+							<p class="tab-content__item-name">E-mail</p>
+							<a href="mailto:{{item.email}}" class="tab__link">{{item.email}}</a>
+						</div>
+						<div class="tab-content__item tab-content__socials">
+							<ul class="footer__social-list social-list">
+								{% for link in item.links %}
 									<li class="social-list__item">
 										<a href="{{ link[1] }}" class="social-list__link">
-											<span class="social-list__icon">
-												<svg><use xlink:href="#icon-{{link[0]}}"></use></svg>
-											</span>
+										<span class="social-list__icon">
+											<svg><use xlink:href="#icon-{{link[0]}}"></use></svg>
+										</span>
 											{{link[0]}}
 										</a>
 									</li>
-									{% endfor %}
-								</ul>
-							</div>
+								{% endfor %}
+							</ul>
 						</div>
 					</div>
 				</div>

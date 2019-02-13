@@ -1,5 +1,5 @@
 <header class="header">
-	<div class="logo">
+	<div class="logo" data-transform-on-scroll>
 		<a href="./" class="logo__link">
 			<svg><use xlink:href="#icon-logo"></use></svg>
 		</a>

@@ -8,6 +8,6 @@
 			The Next Big Thing
 		</h2>
 		<p class="banner__text text">In&nbsp;just 2&nbsp;years we&nbsp;helped our clients raise more than $650 million dollars!</p>
-		<button class="btn-connect banner__btn btn">connect with us</button>
+		<button class="btn-connect banner__btn btn" data-popup-opener="contact-form1">connect with us</button>
 	</div>
 </section>

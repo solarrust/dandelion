@@ -7,6 +7,7 @@
 		padding-right: 40px
 		padding-left: 40px
 	&__img
+		flex-shrink: 0
 		width: 430px
 		height: 670px
 		margin-right: 120px
@@ -21,14 +22,28 @@
 		max-width: 500px
 	&__text
 		max-width: 535px
+	+max-screen($breakpoint-md)
+		&__block
+			padding-right: 0
+			padding-left: 0
+			align-items: center
+		&__img
+			width: 35%
+			height: auto
+			margin-right: 50px
+		&__content
+			margin-top: 0
 
 .main-clients
-	position: relative
-	right: 0
-	top: -235px
-	margin-bottom: -235px
+	margin-top: -235px
 	padding-left: 40px
 	padding-right: 40px
+	+max-screen($breakpoint-lg)
+		margin-top: -13vw
+	+max-screen($breakpoint-md)
+		margin-top: 60px
+		padding-left: 0
+		padding-right: 0
 
 .clients-list
 	display: flex
@@ -45,6 +60,15 @@
 			@extend ._border
 		&:not(:last-child)
 			margin-right: 20px
+	+max-screen($breakpoint-lg)
+		padding-right: 10px
+		&__item
+			flex-grow: 1
+	+max-screen($breakpoint-md)
+		justify-content: flex-start
+		&__item
+			width: 140px
+			height: 220px
 
 .client
 	+box
@@ -86,6 +110,15 @@
 			display: block
 			font-size: 48px
 			line-height: 0.8
+	+max-screen($breakpoint-md)
+		padding-bottom: 30px
+		&__name
+			margin-top: 5px
+		&__num
+			margin-top: 20px
+			font-size: 56px
+			&:after
+				font-size: 36px
 
 .more-btn
 	@extend .no-select
@@ -101,3 +134,5 @@
 	transform: rotate(90deg)
 	&:after
 		content: ' →'
+	+max-screen($breakpoint-md)
+		right: 15px

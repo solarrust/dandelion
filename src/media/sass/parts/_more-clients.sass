@@ -15,15 +15,17 @@
 
 .more-client
 	display: flex
-	flex-basis: 15%
 	align-items: flex-start
+	flex: 0 0 auto
+	width: calc((100% - 40px) / 5)
 	margin-bottom: 40px
 	+Cinetype
 	font-size: 14px
 	&:not(:nth-child(5n))
-		margin-right: 5%
+		margin-right: 10px
 	&__block
 		flex-basis: 31px
+		flex-shrink: 0
 		overflow: hidden
 		margin-right: 20px
 	&__logo
@@ -75,7 +77,13 @@
 	&__name
 		margin: 0
 		font-size: inherit
+		white-space: nowrap
 	&__value
 		font-weight: 500
+		white-space: nowrap
 		&:before
 			content: '$ '
+	+max-screen($breakpoint-md)
+		flex-basis: 33%
+		&:not(:nth-child(5n))
+			margin-right: 0

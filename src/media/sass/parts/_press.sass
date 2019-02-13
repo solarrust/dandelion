@@ -7,7 +7,7 @@
 .press-list
 	display: flex
 	flex-wrap: wrap
-	justify-content: space-between
+	margin: 0 -10px
 	&__link
 		+box
 		@extend ._border
@@ -15,6 +15,7 @@
 		display: flex
 		width: 190px
 		height: 120px
+		margin: 0 10px 20px
 		padding: 40px 25px
 		&:before
 			opacity: 0
@@ -36,3 +37,6 @@
 		& svg
 			fill: $blue
 			transition: fill 0.3s
+	+max-screen($breakpoint-md)
+		&__link
+			width: 195px
