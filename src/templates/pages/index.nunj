@@ -8,6 +8,7 @@
 
 {% block content %}
 	{% include '../parts/_header.nunj' %}
+	{% include '../parts/_mobile-menu.nunj' %}
 	{% include '../parts/_solutions.nunj' %}
 	{% include '../parts/_press.nunj' %}
 	{% include '../parts/_clients.nunj' %}
@@ -15,5 +16,5 @@
 	{% include '../parts/_tariffs.nunj' %}
 	{{ team(teamMembers) }}
 	{% include '../parts/_footer.nunj' %}
-	{% include '../parts/_contact-form.nunj' %}
+	{% include '../parts/_popup.nunj' %}
 {% endblock content %}

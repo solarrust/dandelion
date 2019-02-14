@@ -1,6 +1,8 @@
 .team
 	padding: 70px 60px
 	background-color: $light-gray
+	& .section__title
+		left: -115px
 	&__members
 		@extend .no-scroll
 		display: flex
@@ -27,6 +29,25 @@
 				margin-bottom: 60px
 			&:not(:nth-child(-n+6))
 				margin-left: 70px
+	+max-screen($breakpoint-sm)
+		& .section__title
+			left: -90px
+		&__members
+			margin-left: -20px
+			margin-right: -20px
+			padding-right: 20px
+			&::-webkit-scrollbar
+				height: 2px
+				width: 10px
+			&::-webkit-scrollbar-track
+				margin: 0 60px
+				height: 2px
+				background-color: rgba($blue, 0.3)
+			&::-webkit-scrollbar-thumb
+				background-color: $blue
+		&__member
+				width: 350px
+				height: 105px
 
 .member
 	display: flex
@@ -54,6 +75,14 @@
 		font-size: 24px
 		line-height: 1.25
 		color: $blue
+	+max-screen($breakpoint-sm)
+		&__img-box
+			width: 60px
+			height: 60px
+		&__name
+			font-size: 28px
+		&__position
+			font-size: 20px
 
 .socials-list
 	display: flex

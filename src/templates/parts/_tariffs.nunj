@@ -23,7 +23,7 @@
 				</div>
 				<p class="text">Your information will be&nbsp;delivered to&nbsp;500&nbsp;funds, with a&nbsp;guaranteed minimum of&nbsp;25&nbsp;meetings set&nbsp;up</p>
 				<div class="tariff__btn-block">
-					<button class="btn btn-tariff" data-popup-opener="contact-form1">choose this plan</button>
+					<button class="btn btn-tariff" data-popup-opener="contact-form-1">choose this plan</button>
 				</div>
 			</div>
 			<div class="tariffs__item tariff _main">
@@ -43,7 +43,7 @@
 				</div>
 				<p class="text">Your information will be&nbsp;delivered to&nbsp;100&nbsp;funds, with a&nbsp;guaranteed minimum of&nbsp;10&nbsp;meetings per month set&nbsp;up</p>
 				<div class="tariff__btn-block">
-					<button class="btn btn-tariff" data-popup-opener="contact-form1">choose this plan</button>
+					<button class="btn btn-tariff" data-popup-opener="contact-form-1">choose this plan</button>
 				</div>
 			</div>
 		</div>

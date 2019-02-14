@@ -8,9 +8,13 @@
 	&__menu
 		margin-top: 140px
 	+max-screen($breakpoint-lg)
-		padding: 60px 60px
+		padding: 60px
 		&__menu
 			margin-top: 40px
+	+max-screen($breakpoint-sm)
+		padding: 70px 20px 40px
+		&__tabs
+			margin-top: 50px
 
 .tab-container
 	@extend .no-scroll
@@ -20,6 +24,11 @@
 		margin-right: -60px
 		padding-left: 60px
 		padding-right: 60px
+	+max-screen($breakpoint-sm)
+		margin-left: -20px
+		margin-right: -20px
+		padding-left: 20px
+		padding-right: 20px
 
 .tab-openers
 	display: flex
@@ -63,6 +72,8 @@
 	+max-screen($breakpoint-md)
 		&__link
 			font-size: 20px
+	+max-screen($breakpoint-sm)
+		padding: 45px 0 0
 
 .tab-content
 	display: flex
@@ -77,12 +88,17 @@
 	&__emails,
 	&__socials
 		width: 50%
+		min-width: 300px
 	&__socials
 		margin-left: auto
 	+max-screen($breakpoint-lg)
 		&__socials
 			width: 100%
 			margin-left: 0
+	+max-screen($breakpoint-sm)
+		&__emails
+			width: 100%
+			margin-top: 45px
 
 .social-list
 	display: flex
@@ -110,6 +126,13 @@
 	+max-screen($breakpoint-lg)
 		justify-content: center
 		margin-top: 145px
+	+max-screen($breakpoint-sm)
+		justify-content: flex-start
+		margin-top: 45px
+		&__item
+			font-size: 10px
+			&:not(:last-child)
+				margin-right: 20px
 
 .footer-menu
 	display: flex
@@ -136,3 +159,12 @@
 		&__block
 			&._hide
 				display: none
+	+max-screen($breakpoint-sm)
+		&__block
+			flex-wrap: wrap
+		&__item
+			&:not(:last-child)
+				margin-right: 20px
+			&:last-child
+				width: 100%
+				margin-top: 10px

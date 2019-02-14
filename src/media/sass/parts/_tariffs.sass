@@ -13,6 +13,10 @@
 			max-width: 98%
 		&__text
 			max-width: 98%
+	+max-screen($breakpoint-sm)
+		padding-top: 120px
+		&__container
+			margin-top: 30px
 
 .tariffs-container
 	@extend .no-scroll
@@ -24,6 +28,11 @@
 		margin-right: -60px
 		padding-left: 60px
 		padding-right: 60px
+	+max-screen($breakpoint-sm)
+		margin-left: -20px
+		margin-right: -20px
+		padding-left: 20px
+		padding-right: 20px
 
 .tariff
 	@extend ._border
@@ -34,6 +43,8 @@
 	padding: 60px
 	border-color: transparent
 	background-color: #fff
+	&:not(:last-child)
+		margin-right: 40px
 	&._main
 		background-color: rgba($blue, 0.1)
 	&__name
@@ -66,6 +77,20 @@
 			margin-right: 20px
 		&__content .text
 			font-size: 14px
+	+max-screen($breakpoint-sm)
+		width: 74.5vw
+		min-width: 280px
+		padding: 20px
+		&__name
+			font-size: 32px
+		&__price
+			font-size: 56px
+			&:before
+				font-size: 32px
+		&__unit
+			font-size: 32px
+		&__content .text
+			font-size: 12px
 
 .includes-list
 	margin-top: 30px
@@ -86,6 +111,9 @@
 			background: inline('check.svg')
 		&:not(:last-child)
 			margin-bottom: 20px
+	+max-screen($breakpoint-sm)
+		&__item
+			font-size: 14px
 
 .btn-tariff
 	border-color: $blue

@@ -35,6 +35,9 @@
 		vertical-align: middle
 		white-space: normal
 		font-size: $default-font-size
+	+max-screen($breakpoint-md)
+		&__content
+			padding: 0
 
 .popup
 	display: none
@@ -47,7 +50,7 @@
 	border-radius: 20px
 	background-color: #fff
 	box-sizing: border-box
-	&__text
+	&__title
 		width: 45%
 		min-height: 100%
 	&__close
@@ -62,6 +65,29 @@
 			width: 100%
 			height: 100%
 			fill: #9e9e9e
+	+max-screen($breakpoint-md)
+		width: 100vw
+		max-width: none
+		height: 100vh
+		max-height: none
+		border-radius: 0
+		&__container,
+		&__form
+			height: 100%
+		&__form
+			display: flex
+		&__title
+			width: 85%
+			margin: 0 auto 60px
+			text-align: center
+			font-size: 48px
+	+max-screen($breakpoint-sm)
+		padding: calc(5vw + 60px) 0 0
+		&__title
+			margin-bottom: 30px
+			font-size: 32px
+			text-align: start
+
 
 .contact-form
 	position: relative
@@ -114,11 +140,24 @@
 			@extend .no-pe
 			opacity: 0.3
 			transition: none
+	+max-screen($breakpoint-md)
+		flex-direction: column
+		margin: auto
+	+max-screen($breakpoint-sm)
+		&__label
+			&:not(:first-of-type)
+				margin-top: 0
+		&__input
+			border-color: transparent
+			border-radius: 0
+		&__btn
+			width: calc(100% - 40px)
+			margin: 30px auto 0
 
 .label
 	position: relative
 	&._error
-		& .reg-form__error
+		& .contact-form__error
 			opacity: 1
 			transition: opacity 0.3s
 		& .contact-form__input
@@ -126,6 +165,8 @@
 			color: rgba(#ea5d59, 0.3)
 			border: 1px solid #de0600
 			background-color: transparent
+			&::placeholder
+				color: rgba(#ea5d59, 0.3)
 	&._valid
 		& .contact-form__input
 			color: $blue
@@ -149,9 +190,17 @@
 		._error &
 			opacity: 1
 			transition: opacity 0.3s
+	+max-screen($breakpoint-sm)
+		&._valid
+			& .contact-form__input
+				border-color: transparent
 
 .thanks
 	display: none
 	width: 100%
 	padding: 45px 95px 65px
 	text-align: center
+	+max-screen($breakpoint-md)
+		+box
+	+max-screen($breakpoint-sm)
+		padding: 0 20px

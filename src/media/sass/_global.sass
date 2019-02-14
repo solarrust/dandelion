@@ -103,6 +103,9 @@ html
 	letter-spacing: -0.8px
 	line-height: 1.9
 	opacity: 0.6
+	+max-screen($breakpoint-sm)
+		margin-top: 30px
+		font-size: 14px
 
 .title
 	+Sectra
@@ -111,6 +114,8 @@ html
 	line-height: 0.9
 	+max-screen($breakpoint-md)
 		font-size: 92px
+	+max-screen($breakpoint-sm)
+		font-size: 47px
 
 .title-md
 	+SectraBook
@@ -120,12 +125,16 @@ html
 		color: $blue
 	+max-screen($breakpoint-md)
 		font-size: 48px
+	+max-screen($breakpoint-sm)
+		font-size: 32px
 
 .title-sm
 	+SectraBook
 	font-size: 48px
 	+max-screen($breakpoint-md)
 		font-size: 36px
+	+max-screen($breakpoint-sm)
+		font-size: 28px
 
 .title-xs
 	+Cinetype
@@ -148,6 +157,14 @@ html
 		font-size: 124px
 		color: $blue
 		transform: rotate(90deg)
+	+max-screen($breakpoint-sm)
+		&__content
+			padding-left: 20px
+			padding-right: 20px
+	+max-screen($breakpoint-sm)
+		&__title
+			left: -152px
+			font-size: 95px
 
 ._gradient
 	position: relative
@@ -207,6 +224,7 @@ html
 	display: none
 
 .no-scroll
+	-webkit-overflow-scrolling: touch
 	&::-webkit-scrollbar
 		width: 0px
 		background: transparent

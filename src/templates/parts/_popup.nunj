@@ -1,0 +1,11 @@
+{% from "./_contact-form.nunj" import contactForm %}
+
+<div class="popups-wrapper">
+	<div class="popups-wrapper__content">
+		{{ contactForm(1, 'Please provide your contact information', ' to complete your order.', 'Your message has been sent successfully!', ' We will contact you shortly to finalize your order') }}
+		{{ contactForm(2, 'Please provide your contact information', ' We will contact you shortly to discuss our cooperation', 'Your message has been sent successfully!', ' We will contact you soon.') }}
+		{{ contactForm(3, 'Please provide your contact information', ' so we can schedule your free consultation', 'Your message has been sent successfully!', ' We will contact you soon to schedule your free consultation.') }}
+		{% include './_contact-form.nunj' %}
+		{% include './_popup-menu.nunj' %}
+	</div>
+</div>

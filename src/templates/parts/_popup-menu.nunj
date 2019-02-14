@@ -1,0 +1,50 @@
+<div class="popup _gradient _menu" data-popup="menu" data-popup-effect="scale-in">
+	<div class="popup__container">
+		<div class="menu-popup">
+			<span class="popup__close btn header-btn _close" data-popup-closer>
+				close
+			</span>
+			<nav class="menu-popup__list">
+				<ul class="menu-list nav">
+					<li class="menu-list__item">
+						<a href="#" class="menu-list__link nav__link menu__link" data-scroll-to='.solution' data-popup-closer>solution</a>
+					</li>
+					<li class="menu-list__item">
+						<a href="#" class="menu-list__link menu__link nav__link" data-scroll-to=".clients" data-popup-closer>clients</a>
+					</li>
+					<li class="menu-list__item">
+						<a href="#" class="menu-list__link menu__link nav__link" data-scroll-to=".tariffs" data-popup-closer>plans</a>
+					</li>
+					<li class="menu-list__item">
+						<a href="#" class="menu-list__link menu__link nav__link" data-scroll-to=".team" data-popup-closer>team</a>
+					</li>
+					<li class="menu-list__item">
+						<a href="#" class="menu-list__link menu__link nav__link" data-scroll-to=".footer" data-popup-closer>contacts</a>
+					</li>
+					<li class="menu-list__item">
+						<a href="#" class="menu-list__link menu__link nav__link" data-popup-closer>press</a>
+					</li>
+				</ul>
+				<a href="#" class="menu-popup__link" data-popup-opener="contact-form-3" data-popup-closer>free consultation</a>
+			</nav>
+			<div class="menu-popup__social social _mobile">
+				<a href="#" class="social__link _md">
+					<svg><use xlink:href="#icon-medium"></use></svg>
+				</a>
+				<a href="#" class="social__link _ld">
+					<svg><use xlink:href="#icon-linkedin"></use></svg>
+				</a>
+				<a href="#" class="social__link _tw">
+					<svg><use xlink:href="#icon-twitter"></use></svg>
+				</a>
+				<a href="#" class="social__link _fb">
+					<svg><use xlink:href="#icon-facebook"></use></svg>
+				</a>
+			</div>
+			<div class="menu-popup__block">
+				<p class="menu-popup__item">Contact us today</p>
+				<a href="mailto:hello@dandelionseed.com" class="menu-popup__link _mt">hello@dandelionseed.com</a>
+			</div>
+		</div>
+	</div>
+</div>

@@ -21,7 +21,6 @@ global.ProjectName = new function ProjectName() { // eslint-disable-line
 		LazyLoad: require('./modules/LazyLoad'),
 		Popups: require('./modules/Popups'),
 		Validations: require('./modules/Validations'),
-		HideOnScrolls: require('./modules/HideOnScrolls'),
 		Header: require('./modules/Header'),
 		Clients: require('./modules/Clients'),
 	};

@@ -18,7 +18,7 @@ if(isset($_POST['email'])) {
     $name = $_POST['name']; // required
     $email_from = $_POST['email']; // required
     $telephone = $_POST['phone']; // not required
-    $site = $_POST['site']; // required
+    $site = $_POST['site']; // not required
 
     $email_message = "Данные, которые оставил пользователь.\n\n";
 

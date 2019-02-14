@@ -4,11 +4,11 @@
 			Team
 		</h2>
 		<div class="section__content">
-			<div class="team__members">
+			<div class="team__members" data-ps>
 				{% for member in team %}
 					<div class="team__member member">
 						<div class="member__img-box">
-							<img data-src="./media/img/team/{{ member.photo }}|./media/img/team/{{ member.photo2x }}" alt="{{ member.name }}">
+							<img data-src="./media/img/team/{{ member.photo }}|./media/img/team/{{ member.photo2x }}" alt="Photo {{ member.name }}">
 						</div>
 						<div class="member__content">
 							<ul class="member__socials socials-list">

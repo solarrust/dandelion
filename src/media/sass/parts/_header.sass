@@ -13,8 +13,6 @@
 	+max-screen($breakpoint-md)
 		height: auto
 		min-height: 100vh
-	&__content
-		margin-bottom: 12.36vh
 	&__social
 		position: absolute
 		right: 60px
@@ -33,6 +31,15 @@
 			right: -20px
 			width: 50%
 			height: 42%
+		+max-screen($breakpoint-sm)
+			top: -40px
+			right: 0
+	+max-screen($breakpoint-md)
+		&__content
+			margin-bottom: auto
+			margin-top: auto
+	+max-screen($breakpoint-sm)
+		padding: 20px 20px 60px
 
 
 .logo
@@ -69,6 +76,8 @@
 		+max-screen($breakpoint-lg)
 			position: static
 			margin-top: 40px
+		+max-screen($breakpoint-sm)
+			margin-top: 20px
 	&__title
 		opacity: 0
 		min-height: 100%
@@ -76,7 +85,10 @@
 		._mobile &
 			opacity: 1
 		+max-screen($breakpoint-md)
-			max-width: 86.1%
+			max-width: 97%
+		+max-screen($breakpoint-sm)
+			max-width: 100%
+			opacity: 1
 
 .menu
 	position: relative
@@ -123,6 +135,8 @@
 			font-weight: 400
 		&._mt
 			margin-top: 5px
+	+max-screen($breakpoint-sm)
+		display: none
 
 .nav
 	counter-reset: menu-counter
@@ -153,6 +167,14 @@
 .social
 	display: flex
 	flex-direction: column
+	&._mobile
+		display: none
+		flex-direction: row
+		margin: 5px 0
+		& .social__link
+			&:not(:last-child)
+				margin-bottom: 0
+				margin-right: 15px
 	&__link
 		display: block
 		width: 14px
@@ -173,3 +195,106 @@
 			& svg
 				fill: $mint
 				transition: none
+	+max-screen($breakpoint-sm)
+		display: none
+		&._mobile
+			display: flex
+
+.header-btn
+	position: absolute
+	bottom: 0
+	left: 0
+	display: none
+	width: 100%
+	color: #fff
+	font-size: 14px
+	border-radius: 0
+	background-color: $blue
+	&._close
+		+box
+		bottom: auto
+		top: 0
+		width: 100%
+		height: auto
+		text-align: center
+	+max-screen($breakpoint-sm)
+		display: block
+
+.mobile-menu
+	+box
+	position: relative
+	justify-content: space-between
+	align-items: center
+	display: none
+	width: 100%
+	padding: 10px 20px
+	background-color: $light-gray
+	& .menu__logo
+		position: static
+		opacity: 1
+		margin-top: 0
+	&__burger
+		+box
+		display: flex
+		justify-content: space-between
+		align-items: center
+		width: 40px
+		height: 40px
+		padding: 10px
+		border: 1px solid rgba(#979797, 0.3)
+		border-radius: 5px
+		cursor: pointer
+	&__burger-line
+		&,
+		&:after,
+		&:before
+			width: 100%
+			height: 1px
+			background-color: $blue
+		&:after,
+		&:before
+			content: ''
+			position: relative
+			display: block
+		&:before
+			top: -6px
+		&:after
+			bottom: -5px
+	+max-screen($breakpoint-sm)
+		display: flex
+
+.popup._menu
+	padding: calc(5vw + 60px) 12vw 10vw
+
+.menu-popup
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	height: 100%
+	+Cinetype
+	color: #fff
+	font-size: 18px
+	&__list
+		display: flex
+		flex-direction: column
+		flex-grow: 0.3
+	&__block
+		&:last-child
+			justify-self: flex-end
+			align-content: flex-end
+			margin-top: 10px
+
+.menu-list
+	margin-left: 0
+	flex-grow: 1
+	flex-wrap: nowrap
+	&__item
+		&:not(:last-child)
+			margin-bottom: 20px
+	&__link
+		font-size: 24px
+		font-weight: 700
+		&:before
+			margin-right: 15px
+			font-size: 18px
+

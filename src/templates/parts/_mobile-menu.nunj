@@ -1,0 +1,8 @@
+<div class="mobile-menu" data-hide-on-scroll>
+	<div class="menu__logo">
+		<svg><use xlink:href="#icon-logo-black"></use></svg>
+	</div>
+	<div class="mobile-menu__burger" data-popup-opener="menu">
+		<div class="mobile-menu__burger-line"></div>
+	</div>
+</div>

@@ -33,8 +33,17 @@
 			margin-right: 50px
 		&__content
 			margin-top: 0
+	+max-screen($breakpoint-sm)
+		& .section__content
+			padding-top: 60px
+			padding-bottom: 75px
+		&__block
+			max-width: 65vw
+		&__img
+			display: none
 
 .main-clients
+	@extend .no-scroll
 	margin-top: -235px
 	padding-left: 40px
 	padding-right: 40px
@@ -44,6 +53,11 @@
 		margin-top: 60px
 		padding-left: 0
 		padding-right: 0
+	+max-screen($breakpoint-sm)
+		overflow-x: scroll
+		margin-left: -20px
+		margin-right: -20px
+		padding: 2px 20px
 
 .clients-list
 	display: flex
@@ -69,9 +83,14 @@
 		&__item
 			width: 140px
 			height: 220px
+	+max-screen($breakpoint-sm)
+		&__item
+			flex: 0 0 auto
 
 .client
 	+box
+	display: flex
+	flex-direction: column
 	padding: 20px 20px 40px
 	color: $blue
 	&:first-child
@@ -101,7 +120,7 @@
 		font-weight: 600
 		text-transform: capitalize
 	&__num
-		margin-top: 40px
+		margin-top: auto
 		+Cinetype
 		font-size: 72px
 		line-height: 1
@@ -119,6 +138,12 @@
 			font-size: 56px
 			&:after
 				font-size: 36px
+	+max-screen($breakpoint-sm)
+		&__num
+			font-size: 48px
+			margin-top: auto
+			&:after
+				font-size: 32px
 
 .more-btn
 	@extend .no-select
@@ -132,7 +157,16 @@
 	font-weight: 600
 	text-transform: capitalize
 	transform: rotate(90deg)
+	background: transparent
 	&:after
 		content: ' →'
 	+max-screen($breakpoint-md)
 		right: 15px
+	+max-screen($breakpoint-sm)
+		position: static
+		transform: none
+		width: 100%
+		&:after
+			content: ''
+		&:before
+			content: '↓ '

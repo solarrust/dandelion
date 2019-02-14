@@ -27,9 +27,6 @@
 
 			{% block content %}
 			{% endblock content %}
-
-			<div class="wrapper__push"></div>
-
 		</div>
 
 		{% block scripts %}

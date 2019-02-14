@@ -18,6 +18,15 @@
 			margin-left: -60px
 			margin-right: -60px
 			padding: 0
+	+max-screen($breakpoint-sm)
+		padding-top: 80px
+		padding-bottom: 120px
+		&__subtitle
+			margin-top: 30px
+		&__list
+			margin-top: 80px
+			margin-left: -20px
+			margin-right: -20px
 
 .solution-list
 	counter-reset: solution-counter
@@ -70,4 +79,28 @@
 		&__line
 			&:first-child
 				flex-basis: calc(26.5% - 40px)
+				flex-grow: 0
+	+max-screen($breakpoint-sm)
+		&__title
+			margin: 0 30px
+		&__text
+			max-width: 64vw
+		&:nth-child(odd)
+			&:before
+				margin-left: 120px
+			& .solution__text
+				max-width: 55vw
+				margin-left: 120px
+		&:nth-child(even)
+			&:before
+				margin-left: 80px
+			& .solution__title
+				margin-left: 80px
+			& .solution__text
+				margin-left: 80px
+		&:not(:last-child)
+			margin-bottom: 80px
+		&__line
+			&:first-child
+				flex-basis: 80px
 				flex-grow: 0

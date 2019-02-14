@@ -5,6 +5,11 @@
 		content: ''
 	&:before
 		content: '← '
+	+max-screen($breakpoint-sm)
+		position: absolute
+		bottom: 75px
+		&:before
+			content: '↑ '
 
 .more-clients
 	display: none
@@ -12,6 +17,10 @@
 		display: flex
 		flex-wrap: wrap
 		justify-content: flex-start
+	+max-screen($breakpoint-sm)
+		&__container
+			justify-content: space-between
+			margin-bottom: 60px
 
 .more-client
 	display: flex
@@ -87,3 +96,9 @@
 		flex-basis: 33%
 		&:not(:nth-child(5n))
 			margin-right: 0
+	+max-screen($breakpoint-sm)
+		flex-basis: 45%
+		min-width: 160px
+		margin-bottom: 30px
+		&__block
+			margin-right: 10px
