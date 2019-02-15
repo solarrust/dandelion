@@ -11,7 +11,7 @@
 				<p class="text clients__text">Over 100 teams from all over the world have already gained investments to&nbsp;develop and scale their projects.</p>
 			</div>
 		</div>
-		<div class="main-clients">
+		<div class="main-clients" data-ps>
 			<div class="clients-list">
 				<div class="clients-list__item client _gradient">
 					<div class="client__logo _insolar"></div>

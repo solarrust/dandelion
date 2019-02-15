@@ -46,7 +46,15 @@
 	&:not(:last-child)
 		margin-right: 40px
 	&._main
+		position: relative
 		background-color: rgba($blue, 0.1)
+		&:after
+			content: ''
+			position: absolute
+			top: 0
+			right: -20px
+			width: 20px
+			height: 100%
 	&__name
 		+SectraBook
 		font-size: 36px

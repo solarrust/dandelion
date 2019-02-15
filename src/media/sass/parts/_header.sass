@@ -1,18 +1,27 @@
 .header
+	+box
 	position: relative
-	display: flex
-	flex-direction: column
-	justify-content: space-between
-	box-sizing: border-box
 	min-height: 768px
 	height: 100vh
-	padding: 20px 60px 40px
+	padding: 20px 0 40px
 	background-image: linear-gradient(to top right, $light-blue 5%, $blue)
 	background-color: $blue
 	color: #fff
-	+max-screen($breakpoint-md)
-		height: auto
-		min-height: 100vh
+	&__wrapper
+		+box
+		position: relative
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		width: 100%
+		max-width: 1486px
+		height: 100%
+		margin: 0 auto
+		padding-left: 60px
+		padding-right: 60px
+		+max-screen($breakpoint-sm)
+			padding-left: 20px
+			padding-right: 20px
 	&__social
 		position: absolute
 		right: 60px
@@ -26,20 +35,22 @@
 		& svg
 			width: 100%
 			height: 100%
-		+max-screen($breakpoint-lg)
+	+max-screen($breakpoint-lg)
+		&__dandelion
 			top: -70px
 			right: -20px
 			width: 50%
 			height: 42%
-		+max-screen($breakpoint-sm)
-			top: -40px
-			right: 0
 	+max-screen($breakpoint-md)
+		min-height: 100vh
 		&__content
 			margin-bottom: auto
 			margin-top: auto
 	+max-screen($breakpoint-sm)
-		padding: 20px 20px 60px
+		padding: 20px 0 60px
+		&__dandelion
+			top: -40px
+			right: 0
 
 
 .logo
@@ -47,13 +58,7 @@
 	z-index: 10
 	width: 138px
 	height: 75px
-	margin-bottom: 9.11vh
-	transform: translateY(0)
-	transition: opacity 0.3s, transform 0.5s 0.4s
-	&._scrolled
-		opacity: 0
-		transform: translateY(calc(100vh - 135px))
-		transition: opacity 0.3s 0.7s, transform 0.5s
+	margin-bottom: 1vh
 	+max-screen($breakpoint-lg)
 		margin-bottom: 0
 	&__link
@@ -99,24 +104,7 @@
 	color: #fff
 	+Cinetype
 	transition: transform 0.3s
-	&._scrolled
-		color: #000
-		transform: translateY(160px)
-		transition: color 0.3s 0.4s, transform 0.5s ease-in-out 1s
-		& .menu__block._hide
-			opacity: 0
-			transition: opacity 0.3s 0.3s
-		& .menu__logo
-			opacity: 1
-			transition: opacity 0.5s 0.7s
-	&__block
-		&._hide
-			transition: opacity 0.3s 0.4s
 	&__logo
-		position: absolute
-		left: 0
-		top: 0
-		opacity: 0
 		margin-top: -30px
 		width: 138px
 		height: 75px
@@ -126,11 +114,13 @@
 	&__item
 		line-height: 1.4
 	&__link
-		@extend .underline-link
+		@extend .link
 		display: inline-block
 		color: inherit
 		font-weight: 600
 		text-decoration: none
+		&:hover
+			color: $mint
 		&._reg
 			font-weight: 400
 		&._mt
@@ -222,13 +212,23 @@
 
 .mobile-menu
 	+box
-	position: relative
 	justify-content: space-between
 	align-items: center
 	display: none
 	width: 100%
-	padding: 10px 20px
+	padding: 10px 20px 20px
 	background-color: $light-gray
+	transform: translateY(0)
+	transition: transform 0.3s ease-out
+	will-change: transform
+	&._active
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		z-index: 99
+		&._scrolled
+			transform: translateY(calc(-100% + 2px))
 	& .menu__logo
 		position: static
 		opacity: 1
@@ -298,3 +298,14 @@
 			margin-right: 15px
 			font-size: 18px
 
+.progress
+	position: absolute
+	left: 0
+	bottom: 0
+	width: 0%
+	height: 2px
+	background-image: linear-gradient(to right, $blue, $mint)
+	transition: width 0.3s linear
+	+max-screen($breakpoint-sm)
+		.inner-menu &
+			display: none

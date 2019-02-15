@@ -23,6 +23,8 @@ global.ProjectName = new function ProjectName() { // eslint-disable-line
 		Validations: require('./modules/Validations'),
 		Header: require('./modules/Header'),
 		Clients: require('./modules/Clients'),
+		HideOnScrolls: require('./modules/HideOnScrolls'),
+		PerfectScrollbars: require('./modules/PerfectScrollbars'),
 	};
 
 	// Startup

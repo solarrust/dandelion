@@ -1,6 +1,8 @@
 .footer
-	padding: 60px 120px
+	padding: 60px 0
 	background-color: $light-gray
+	&__wrapper
+		@extend .header__wrapper
 	&__title
 		text-align: center
 	&__tabs
@@ -8,11 +10,10 @@
 	&__menu
 		margin-top: 140px
 	+max-screen($breakpoint-lg)
-		padding: 60px
 		&__menu
 			margin-top: 40px
 	+max-screen($breakpoint-sm)
-		padding: 70px 20px 40px
+		padding: 70px 0 40px
 		&__tabs
 			margin-top: 50px
 
@@ -63,12 +64,14 @@
 	&:not(:first-of-type)
 		display: none
 	&__link
-		@extend .underline-link
+		@extend .link
 		display: inline-block
 		+CinetypeMono
 		font-size: 24px
 		color: rgba(#000, 0.6)
 		text-decoration: none
+		&:hover
+			color: $blue
 	+max-screen($breakpoint-md)
 		&__link
 			font-size: 20px
@@ -148,12 +151,14 @@
 		&:not(:last-child)
 			margin-right: 30px
 		&._link
-			@extend .underline-link
+			@extend .link
 			&:hover
 				color: $blue
 			&._press
 				font-weight: 600
 				color: #000
+				&:hover
+					color: $blue
 	+max-screen($breakpoint-md)
 		justify-content: center
 		&__block

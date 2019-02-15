@@ -1,0 +1,29 @@
+._mobile
+	.inner-menu
+		display: none
+		visibility: hidden
+
+.inner-menu
+	+box
+	color: #000
+	background-color: $light-gray
+	transition: transform 0.3s ease-out
+	transform: translateY(0)
+	will-change: transform
+	&._active
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		z-index: 9
+		&._scrolled
+			transform: translateY(calc(-100% + 2px))
+	& .menu
+		max-width: 1366px
+		margin: 0 auto
+		padding: 50px 60px 20px
+		&__link
+			&:hover
+				color: $blue
+	& *
+		color: currentColor

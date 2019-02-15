@@ -1,24 +1,38 @@
 var dom = require('../utils/DOM');
 var env = require('../utils/ENV');
 
-var $target = $('[data-transform-on-scroll]');
+var $target = $('[data-hide-on-scroll]');
+var $progress = $('.progress');
 var $el = $('[data-text]:first'),
 	text = $.trim($el.text()),
 	words = text.split(' '),
 	html = '';
 var height = $el.height();
+$progress.width(0);
 
 function HeaderHelper() {
 	dom.$window.on('scroll', () => {
-		if (!env.isMobile) {
-			if (dom.$body.width() > 768) {
-				if (dom.$window.scrollTop() > 40) {
-					$target.addClass('_scrolled');
-				} else {
-					$target.removeClass('_scrolled');
-				}
+		if (dom.$window.scrollTop() > $('header').outerHeight()) {
+			$target.addClass('_active');
+			if (env.isMobile) {
+				$('.solutions').css({ paddingTop: '175px' });
+			} else {
+				$('.solutions').css({ paddingTop: '213px' });
+			}
+		} else {
+			$target.removeClass('_active');
+			if (env.isMobile) {
+				$('.solutions').css({ paddingTop: '80px' });
+			} else {
+				$('.solutions').css({ paddingTop: '110px' });
 			}
 		}
+
+		var width = dom.$window.scrollTop() / (dom.$document.height() - $(window).height());
+
+		$progress.css({
+			width: ((100 * width) | 0) + '%',
+		});
 	});
 
 	dom.$window.on('load', function() {
@@ -40,8 +54,8 @@ function HeaderHelper() {
 					.hide()
 					.each(function(i) {
 						$(this)
-							.delay(i * 300)
-							.fadeIn(words[i].length > 3 ? words[i].length * 100 : 500);
+							.delay(i * 200)
+							.fadeIn(words[i].length > 3 ? words[i].length * 85 : 250);
 					});
 			}
 		}

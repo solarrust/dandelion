@@ -1,6 +1,5 @@
 {% extends "../ext/base.nunj" %}
 
-{% from "../parts/_menu.nunj" import menu %}
 {% from "../parts/_team.nunj" import team %}
 
 {# Пример расширения существующего блока #}
@@ -8,6 +7,7 @@
 
 {% block content %}
 	{% include '../parts/_header.nunj' %}
+	{% include '../parts/_menu.nunj' %}
 	{% include '../parts/_mobile-menu.nunj' %}
 	{% include '../parts/_solutions.nunj' %}
 	{% include '../parts/_press.nunj' %}

@@ -1,7 +1,30 @@
-{% macro menu(active=false) %}
-	<nav class="menu" style="padding-top:30px;">
-		{% for item in menuItems %}
-			<a href="{{ item.path }}" class="menu__item{% if item.id == activeItem %} _active{% endif %}" style="margin-right: 15px;">{{ item.name }}</a>
-		{% endfor %}
+<div class="inner-menu" data-hide-on-scroll>
+	<nav class="header__menu menu">
+		<div class="menu__logo">
+			<svg><use xlink:href="#icon-logo-black"></use></svg>
+		</div>
+		<nav class="menu__block menu__item nav">
+			<div class="nav__item">
+				<a href="#" class="nav__link menu__link" data-scroll-to='.solution'>solution</a>
+			</div>
+			<div class="nav__item">
+				<a href="#" class="nav__link menu__link" data-scroll-to=".clients">clients</a>
+			</div>
+			<div class="nav__item">
+				<a href="#" class="nav__link menu__link" data-scroll-to=".tariffs">plans</a>
+			</div>
+			<div class="nav__item">
+				<a href="#" class="nav__link menu__link" data-scroll-to=".team">team</a>
+			</div>
+		</nav>
+		<div class="menu__block sub-nav">
+			<div class="sub-nav__item menu__item">
+				<a href="#" class="menu__link _reg" data-scroll-to=".footer">contacts</a>
+			</div>
+			<div class="sub-nav__item menu__item">
+				<a href="#" class="menu__link" data-popup-opener="contact-form-3">free consultation</a>
+			</div>
+		</div>
 	</nav>
-{% endmacro %}
+	<div class="progress" aria-hidden="true"></div>
+</div>

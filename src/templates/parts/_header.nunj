@@ -1,62 +1,61 @@
 <header class="header">
-	<div class="logo" data-transform-on-scroll>
-		<a href="./" class="logo__link">
-			<svg><use xlink:href="#icon-logo"></use></svg>
-		</a>
-	</div>
-	<div class="header__dandelion">
+	<div class="header__dandelion" aria-hidden="true">
 		<svg><use xlink:href="#icon-leaf"></use></svg>
 	</div>
-	<div class="header__content header-content">
-		<h1 class="header-content__title title" data-text>
-			<span class="_block-highlight">Holistic solution</span> for successfully attracting investments
-		</h1>
-		<p class="header-content__text text">For ventures of any size, from seed-stage startups to companies gearing up for an IPO</p>
-	</div>
-	<nav class="header__menu menu" data-transform-on-scroll>
-		<div class="menu__logo">
-			<svg><use xlink:href="#icon-logo-black"></use></svg>
+	<div class="header__wrapper">
+		<div class="logo">
+			<a href="./" class="logo__link">
+				<svg><use xlink:href="#icon-logo"></use></svg>
+			</a>
 		</div>
-		<div class="menu__block _hide">
-			<p class="menu__item">Contact us today</p>
-			<a href="mailto:hello@dandelionseed.com" class="menu__link _mt">hello@dandelionseed.com</a>
+		<div class="header__content header-content">
+			<h1 class="header-content__title title" data-text>
+				<span class="_block-highlight">Holistic solution</span> for successfully attracting investments
+			</h1>
+			<p class="header-content__text text">For ventures of any size, from seed-stage startups to companies gearing up for an IPO</p>
 		</div>
-		<nav class="menu__block menu__item nav">
-			<div class="nav__item">
-				<a href="#" class="nav__link menu__link" data-scroll-to='.solution'>solution</a>
+		<nav class="header__menu menu">
+			<div class="menu__block _hide">
+				<p class="menu__item">Contact us today</p>
+				<a href="mailto:hello@dandelionseed.com" class="menu__link _mt">hello@dandelionseed.com</a>
 			</div>
-			<div class="nav__item">
-				<a href="#" class="nav__link menu__link" data-scroll-to=".clients">clients</a>
-			</div>
-			<div class="nav__item">
-				<a href="#" class="nav__link menu__link" data-scroll-to=".tariffs">plans</a>
-			</div>
-			<div class="nav__item">
-				<a href="#" class="nav__link menu__link" data-scroll-to=".team">team</a>
+			<nav class="menu__block menu__item nav">
+				<div class="nav__item">
+					<a href="#" class="nav__link menu__link" data-scroll-to='.solution'>solution</a>
+				</div>
+				<div class="nav__item">
+					<a href="#" class="nav__link menu__link" data-scroll-to=".clients">clients</a>
+				</div>
+				<div class="nav__item">
+					<a href="#" class="nav__link menu__link" data-scroll-to=".tariffs">plans</a>
+				</div>
+				<div class="nav__item">
+					<a href="#" class="nav__link menu__link" data-scroll-to=".team">team</a>
+				</div>
+			</nav>
+			<div class="menu__block sub-nav">
+				<div class="sub-nav__item menu__item">
+					<a href="#" class="menu__link _reg" data-scroll-to=".footer">contacts</a>
+				</div>
+				<div class="sub-nav__item menu__item">
+					<a href="#" class="menu__link" data-popup-opener="contact-form-3">free consultation</a>
+				</div>
 			</div>
 		</nav>
-		<div class="menu__block sub-nav">
-			<div class="sub-nav__item menu__item">
-				<a href="#" class="menu__link _reg" data-scroll-to=".footer">contacts</a>
-			</div>
-			<div class="sub-nav__item menu__item">
-				<a href="#" class="menu__link" data-popup-opener="contact-form-3">free consultation</a>
-			</div>
+		<div class="header__social social">
+			<a href="#" class="social__link _md">
+				<svg><use xlink:href="#icon-medium"></use></svg>
+			</a>
+			<a href="#" class="social__link _ld">
+				<svg><use xlink:href="#icon-linkedin"></use></svg>
+			</a>
+			<a href="#" class="social__link _tw">
+				<svg><use xlink:href="#icon-twitter"></use></svg>
+			</a>
+			<a href="#" class="social__link _fb">
+				<svg><use xlink:href="#icon-facebook"></use></svg>
+			</a>
 		</div>
-	</nav>
-	<div class="header__social social">
-		<a href="#" class="social__link _md">
-			<svg><use xlink:href="#icon-medium"></use></svg>
-		</a>
-		<a href="#" class="social__link _ld">
-			<svg><use xlink:href="#icon-linkedin"></use></svg>
-		</a>
-		<a href="#" class="social__link _tw">
-			<svg><use xlink:href="#icon-twitter"></use></svg>
-		</a>
-		<a href="#" class="social__link _fb">
-			<svg><use xlink:href="#icon-facebook"></use></svg>
-		</a>
 	</div>
 	<button class="btn header-btn _mobile" data-popup-opener="contact-form-3">
 		free consultation

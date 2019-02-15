@@ -16,7 +16,7 @@
 		&__members
 			flex-direction: column
 			overflow-x: scroll
-			max-height: calc(190px * 6)
+			max-height: calc(190px * 4)
 			margin-left: -60px
 			margin-right: -60px
 			padding-left: 60px
@@ -27,7 +27,7 @@
 			height: 125px
 			&:nth-last-child(-n+2)
 				margin-bottom: 60px
-			&:not(:nth-child(-n+6))
+			&:not(:nth-child(-n+4))
 				margin-left: 70px
 	+max-screen($breakpoint-sm)
 		& .section__title
@@ -36,15 +36,17 @@
 			margin-left: -20px
 			margin-right: -20px
 			padding-right: 20px
-			&::-webkit-scrollbar
-				height: 2px
-				width: 10px
-			&::-webkit-scrollbar-track
-				margin: 0 60px
-				height: 2px
-				background-color: rgba($blue, 0.3)
-			&::-webkit-scrollbar-thumb
-				background-color: $blue
+			&.ps.ps--active-x
+				& > .ps__rail-x
+					+box
+					display: block !important
+					opacity: 1 !important
+					height: 2px
+					background-color: rgba($blue, 0.3)
+					& > .ps__thumb-x
+						bottom: 0
+						height: 2px
+						background-color: $blue
 		&__member
 				width: 350px
 				height: 105px

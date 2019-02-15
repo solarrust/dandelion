@@ -42,7 +42,7 @@
 		},
 		{
 			"logo": "socialmedia",
-			"name": "SocialMedia.Market",
+			"name": "SocialMedia.&shy;Market",
 			"value": "8, 462, 740"
 		},
 		{
@@ -350,32 +350,32 @@
 		{
 			"name": "New York",
 			"tel": ["+82(2)545-25-60", "+82(2)545-25-60"],
-			"email": "hello@dandelionseed.com",
+			"email": "newyork@dandelionseed.com",
 			"links": [["medium", "#"], ["linkedin", "#"], ["twitter", "#"], ["facebook", "#"]],
 			"active": true
 		},
 		{
 			"name": "Hong Kong",
 			"tel": ["+82(2)545-25-60", "+82(2)545-25-60"],
-			"email": "hello@dandelionseed.com",
+			"email": "hongkong@dandelionseed.com",
 			"links": [["medium", "#"], ["linkedin", "#"], ["twitter", "#"], ["facebook", "#"]]
 		},
 		{
 			"name": "San Francisco",
 			"tel": ["+82(2)545-25-60", "+82(2)545-25-60"],
-			"email": "hello@dandelionseed.com",
+			"email": "sanfrancisco@dandelionseed.com",
 			"links": [["medium", "#"], ["linkedin", "#"], ["twitter", "#"], ["facebook", "#"]]
 		},
 		{
 			"name": "London",
 			"tel": ["+82(2)545-25-60", "+82(2)545-25-60"],
-			"email": "hello@dandelionseed.com",
+			"email": "london@dandelionseed.com",
 			"links": [["medium", "#"], ["linkedin", "#"], ["twitter", "#"], ["facebook", "#"]]
 		},
 		{
 			"name": "Moskow",
 			"tel": ["+82(2)545-25-60", "+82(2)545-25-60"],
-			"email": "hello@dandelionseed.com",
+			"email": "moskow@dandelionseed.com",
 			"links": [["medium", "#"], ["linkedin", "#"], ["twitter", "#"], ["facebook", "#"]]
 		}
 	]

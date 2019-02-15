@@ -1,20 +1,22 @@
 {% from "../parts/_contacts-tabs.nunj" import contactsTabs %}
 
 <footer class="footer" data-scroll-target="contacts">
-	<h3 class="footer__title title-md">
-		Contact <span class="_highlight">us Today</span>
-	</h3>
-	<div class="footer__tabs">
-		{{ contactsTabs(contacts) }}
+	<div class="footer__wrapper">
+		<h3 class="footer__title title-md">
+			Contact <span class="_highlight">us Today</span>
+		</h3>
+		<div class="footer__tabs">
+			{{ contactsTabs(contacts) }}
+		</div>
+		<nav class="footer__menu footer-menu">
+			<div class="footer-menu__block _hide">
+				<a href="#" target="_blank" class="footer-menu__item _link _press">Press Releases</a>
+			</div>
+			<div class="footer-menu__block">
+				<a href="#" target="_blank" class="footer-menu__item _link">cookie policy</a>
+				<a href="#" target="_blank" class="footer-menu__item _link">terms & conditions</a>
+				<p class="footer-menu__item">copyright Dandelion Seed © 2019</p>
+			</div>
+		</nav>
 	</div>
-	<nav class="footer__menu footer-menu">
-		<div class="footer-menu__block _hide">
-			<a href="#" target="_blank" class="footer-menu__item _link _press">Press Releases</a>
-		</div>
-		<div class="footer-menu__block">
-			<a href="#" target="_blank" class="footer-menu__item _link">cookie policy</a>
-			<a href="#" target="_blank" class="footer-menu__item _link">terms & conditions</a>
-			<p class="footer-menu__item">copyright Dandelion Seed © 2019</p>
-		</div>
-	</nav>
 </footer>

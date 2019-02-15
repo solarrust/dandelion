@@ -25,7 +25,7 @@
 						<a href="#" class="menu-list__link menu__link nav__link" data-popup-closer>press</a>
 					</li>
 				</ul>
-				<a href="#" class="menu-popup__link" data-popup-opener="contact-form-3" data-popup-closer>free consultation</a>
+				<a href="#" class="menu-popup__link" data-popup-opener="contact-form-3">free consultation</a>
 			</nav>
 			<div class="menu-popup__social social _mobile">
 				<a href="#" class="social__link _md">

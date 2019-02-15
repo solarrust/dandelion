@@ -47,6 +47,11 @@
 	margin-top: -235px
 	padding-left: 40px
 	padding-right: 40px
+	&:after
+		content: ''
+		display: block
+		height: 100%
+		width: 40px
 	+max-screen($breakpoint-lg)
 		margin-top: -13vw
 	+max-screen($breakpoint-md)
@@ -63,6 +68,7 @@
 	display: flex
 	justify-content: flex-end
 	margin-left: auto
+	padding-top: 2px
 	&__item
 		position: relative
 		width: 200px
@@ -74,6 +80,14 @@
 			@extend ._border
 		&:not(:last-child)
 			margin-right: 20px
+		&:last-of-type
+			&:after
+				content: ''
+				position: absolute
+				top: 0
+				right: -20px
+				width: 20px
+				height: 100%
 	+max-screen($breakpoint-lg)
 		padding-right: 10px
 		&__item
@@ -147,6 +161,7 @@
 
 .more-btn
 	@extend .no-select
+	@extend .animated
 	position: absolute
 	bottom: 145px
 	right: 35px
@@ -158,6 +173,9 @@
 	text-transform: capitalize
 	transform: rotate(90deg)
 	background: transparent
+	will-change: transform
+	&:hover
+		color: $blue
 	&:after
 		content: ' →'
 	+max-screen($breakpoint-md)

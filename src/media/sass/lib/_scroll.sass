@@ -1,0 +1,99 @@
+.ps
+	position: relative
+	touch-action: auto
+	overflow: hidden !important
+	&.ps--active-x > .ps__rail-x,
+	&.ps--active-y > .ps__rail-y
+		display: block
+		background-color: transparent
+	&.ps--active-y:hover .ps__thumb-y
+		background-color: $blue
+	&.ps--scrolling
+		&-x > .ps__rail-x
+			opacity: 0.9
+			> .ps__thumb-x
+				background-color: $blue
+				height: 11px
+		&-y > .ps__rail-y
+			opacity: 0
+			> .ps__thumb-y
+				background-color: $blue
+	> .ps__rail-x
+		display: none !important
+		position: absolute
+		opacity: 0
+		transition: background-color .2s linear, opacity .2s linear
+		bottom: 0
+		height: 15px
+		> .ps__thumb-x
+			position: absolute
+			background-color: #aaa
+			border-radius: 6px
+			transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out
+			bottom: 2px
+			height: 6px
+		&:hover > .ps__thumb-x, &:active > .ps__thumb-x
+			height: 11px
+	.ps__rail-y
+		display: none
+		position: absolute
+		opacity: 0
+		transition: background-color .2s linear, opacity .2s linear
+		right: 0
+		width: 30px
+		margin: 45px 0
+		&:before
+			+b
+			top: 0
+			bottom: 0
+			right: 10px
+			width: 0
+			background-color: $blue
+		> .ps__thumb-y
+			position: absolute
+			background-color: transparent
+			transition: background-color .2s linear, height .2s linear, width .2s ease-in-out
+			right: 9px
+			width: 5px
+		&:hover > .ps__thumb-y, &:active > .ps__thumb-y
+			background-color: transparent
+			cursor: pointer
+	&:hover
+		&.ps--scrolling
+			&-x > .ps__rail-x
+				opacity: 0.9
+				> .ps__thumb-x
+					background-color: $blue
+					height: 11px
+			&-y > .ps__rail-y
+				opacity: 0
+				> .ps__thumb-y
+					background-color: $blue
+		>
+		.ps__rail-x
+			opacity: 0.6
+			.ps__rail-x:hover
+				background-color: $blue
+				opacity: 0.9
+				> .ps__thumb-x
+					background-color: $blue
+			.ps__rail-y:hover
+				background-color: $blue
+				opacity: 0
+				> .ps__thumb-y
+					background-color: $blue
+
+@supports (-ms-overflow-style: none)
+	.ps
+		overflow: auto !important
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+	.ps
+		overflow: auto !important
+
+//._desktop
+//	.ps
+//		&:hover
+//			.ps__rail-y
+//				opacity: .65
+				//display: none

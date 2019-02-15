@@ -197,6 +197,7 @@ html
 	border-radius: 8px
 
 .btn
+	@extend .animated
 	@extend ._border
 	padding: 20px 33px
 	+Cinetype
@@ -204,29 +205,23 @@ html
 	font-weight: 700
 	color: currentColor
 	background: none
-
-.underline-link
-	@extend .animated
-	&:after
-		content: ""
-		display: block
-		padding-top: 3px
-		border-bottom: 1px solid transparent
-		background-color: transparent
-		transition: border 0.3s
 	&:hover
-		color: inherit
-		&:after
-			border-color: currentColor
-			transition: none
+		color: #fff
+		background-color: $blue
+
+
+.link
+	@extend .animated
 
 .grecaptcha-badge
 	display: none
 
 .no-scroll
-	-webkit-overflow-scrolling: touch
+	-ms-overflow-style: none  // IE 10+
+	overflow: -moz-scrollbars-none
 	&::-webkit-scrollbar
 		width: 0px
+		height: 0px
 		background: transparent
 	&::-webkit-scrollbar-thumb
 		background: transparent

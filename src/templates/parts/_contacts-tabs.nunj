@@ -1,7 +1,7 @@
 {% macro contactsTabs(data) %}
-	<div class="tabs" data-switcher data-switcher-mode="acc">
+	<div class="tabs" data-switcher data-switcher-mode="fade">
 		<div class="tab-container">
-			<div class="tab-openers">
+			<div class="tab-openers" data-ps>
 				{% for item in data %}
 					<span class="tab-openers__item {% if item.active %}_active{% endif %}" data-switcher-tab-opener="{{ item.name }}">{{ item.name }}</span>
 				{% endfor %}
