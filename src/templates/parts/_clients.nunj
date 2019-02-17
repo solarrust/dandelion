@@ -11,29 +11,71 @@
 				<p class="text clients__text">Over 100 teams from all over the world have already gained investments to&nbsp;develop and scale their projects.</p>
 			</div>
 		</div>
-		<div class="main-clients" data-ps>
+		<div class="main-clients">
 			<div class="clients-list">
 				<div class="clients-list__item client _gradient">
-					<div class="client__logo _insolar"></div>
-					<p class="client__name">insolar</p>
-					<div class="client__num">60</div>
-				</div>
-				<div class="clients-list__item client">
-					<div class="client__logo _crypterium">
-						<svg><use xlink:href="#icon-crypterium"></use></svg>
+					<div class="client__container">
+						<div class="client__logo _insolar"></div>
+						<p class="client__name">insolar</p>
+						<div class="client__num">60</div>
 					</div>
-					<p class="client__name">crypterium</p>
-					<div class="client__num">51</div>
 				</div>
 				<div class="clients-list__item client">
-					<div class="client__logo _shivom"></div>
-					<p class="client__name">shivom</p>
-					<div class="client__num">35</div>
+					<div class="client__container">
+						<div class="client__logo _crypterium">
+							<svg><use xlink:href="#icon-crypterium"></use></svg>
+						</div>
+						<p class="client__name">crypterium</p>
+						<div class="client__num">51</div>
+					</div>
 				</div>
 				<div class="clients-list__item client">
-					<div class="client__logo _universa"></div>
-					<p class="client__name">universa</p>
-					<div class="client__num">28</div>
+					<div class="client__container">
+						<div class="client__logo _shivom"></div>
+						<p class="client__name">shivom</p>
+						<div class="client__num">35</div>
+					</div>
+				</div>
+				<div class="clients-list__item client">
+					<div class="client__container">
+						<div class="client__logo _universa"></div>
+						<p class="client__name">universa</p>
+						<div class="client__num">28</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-clients _mobile" data-slider="clients" data-slick>
+			<div class="clients-list" data-slider-slides>
+				<div class="clients-list__item client _gradient">
+					<div class="client__container">
+						<div class="client__logo _insolar"></div>
+						<p class="client__name">insolar</p>
+						<div class="client__num">60</div>
+					</div>
+				</div>
+				<div class="clients-list__item client">
+					<div class="client__container">
+						<div class="client__logo _crypterium">
+							<svg><use xlink:href="#icon-crypterium"></use></svg>
+						</div>
+						<p class="client__name">crypterium</p>
+						<div class="client__num">51</div>
+					</div>
+				</div>
+				<div class="clients-list__item client">
+					<div class="client__container">
+						<div class="client__logo _shivom"></div>
+						<p class="client__name">shivom</p>
+						<div class="client__num">35</div>
+					</div>
+				</div>
+				<div class="clients-list__item client">
+					<div class="client__container">
+						<div class="client__logo _universa"></div>
+						<p class="client__name">universa</p>
+						<div class="client__num">28</div>
+					</div>
 				</div>
 			</div>
 		</div>

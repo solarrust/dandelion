@@ -164,7 +164,7 @@ Validations.prototype = {
 
 		let request = new XMLHttpRequest();
 		request.open('POST', action, true);
-		request.onload = function(e) {
+		request.onload = function() {
 			// TweenMax.to($formMain.nope(), 0.15, { alpha: 0.5 });
 
 			if (request.status == 200) {

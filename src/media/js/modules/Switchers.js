@@ -38,7 +38,7 @@ Switchers.prototype = {
 					.removeClass(OPENED);
 				$openTab
 					.stop()
-					.fadeIn(500)
+					.fadeIn(750)
 					.addClass(OPENED);
 
 				$opener.addClass(ACTIVE);

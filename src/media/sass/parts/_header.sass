@@ -7,6 +7,7 @@
 	background-image: linear-gradient(to top right, $light-blue 5%, $blue)
 	background-color: $blue
 	color: #fff
+	transition: height 0.3s
 	&__wrapper
 		+box
 		position: relative
@@ -42,7 +43,7 @@
 			width: 50%
 			height: 42%
 	+max-screen($breakpoint-md)
-		min-height: 100vh
+		min-height: auto
 		&__content
 			margin-bottom: auto
 			margin-top: auto
@@ -51,7 +52,6 @@
 		&__dandelion
 			top: -40px
 			right: 0
-
 
 .logo
 	position: relative
@@ -212,6 +212,10 @@
 
 .mobile-menu
 	+box
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
 	justify-content: space-between
 	align-items: center
 	display: none
@@ -223,9 +227,6 @@
 	will-change: transform
 	&._active
 		position: fixed
-		top: 0
-		left: 0
-		right: 0
 		z-index: 99
 		&._scrolled
 			transform: translateY(calc(-100% + 2px))

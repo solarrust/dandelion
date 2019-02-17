@@ -57,7 +57,7 @@
 			</a>
 		</div>
 	</div>
-	<button class="btn header-btn _mobile" data-popup-opener="contact-form-3">
+	<button class="btn header-btn _mobile" data-popup-opener="contact-form-3" data-fix-btn>
 		free consultation
 	</button>
 </header>

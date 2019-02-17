@@ -1,4 +1,6 @@
 <section class="solutions section" data-scroll-target='story'>
+	{% include './_menu.nunj' %}
+	{% include './_mobile-menu.nunj' %}
 	<h2 class="section__title">
 		Solution
 	</h2>

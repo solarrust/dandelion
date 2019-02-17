@@ -171,6 +171,7 @@
 			"name": "Mikhail Sezemov",
 			"position": "Marketing Manager",
 			"socials": {
+				"ld": "https://www.linkedin.com/in/sezemov/",
 				"email": "mikhail.sezemov@icobox.io",
 				"t": "http://t.me/MikhailSez"
 			}
@@ -336,8 +337,8 @@
 			}
 		},
 		{
-			"photo": "flotskaya.jpg",
-			"photo2x": "flotskaya@2x.jpg",
+			"photo": "nikiforov.jpg",
+			"photo2x": "nikiforov@2x.jpg",
 			"name": "Evgeny Nikiforov",
 			"position": "Sales Manager",
 			"socials": {

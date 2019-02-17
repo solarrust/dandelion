@@ -6,7 +6,7 @@ import { PRODUCTION, hmrEnabled } from './config';
 import paths from './paths';
 
 const entryPoints = {
-	bundle: path.resolve(__dirname, paths.src.scripts),
+	bundle: path.resolve(__dirname, paths.src.scripts), // eslint-disable-line
 };
 
 const hotMiddlewareString = 'webpack-hot-middleware/client?quiet=true&noInfo=true';
@@ -19,7 +19,7 @@ export const config = {
 	}, {}),
 	output: {
 		filename: 'bundle.js',
-		path: path.resolve(__dirname, paths.build.scripts),
+		path: path.resolve(__dirname, paths.build.scripts), // eslint-disable-line
 		publicPath: '/media/js',
 	},
 	module: {
@@ -27,7 +27,7 @@ export const config = {
 			{
 				test: /\.js$/,
 				enforce: 'pre',
-				include: [path.resolve(__dirname, 'src/media/js'), path.resolve(__dirname, 'node_modules/gsap')],
+				include: [path.resolve(__dirname, 'src/media/js'), path.resolve(__dirname, 'node_modules/gsap')], // eslint-disable-line
 				use: [
 					'babel-loader',
 					{
@@ -54,7 +54,7 @@ export const config = {
 	devtool: PRODUCTION ? false : '#eval',
 	mode: PRODUCTION ? 'production' : 'development',
 	optimization: {
-		minimize: PRODUCTION,
+		minimize: true,
 	},
 	watch: !PRODUCTION && !hmrEnabled,
 };

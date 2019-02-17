@@ -16,7 +16,7 @@ import { PRODUCTION } from '../config';
 
 const PROCESSORS = [
 	autoprefixer({
-		browsers: ['last 4 versions'],
+		browsers: ['last 5 versions', 'ie 11'],
 		cascade: true,
 	}),
 	assets({
@@ -49,7 +49,7 @@ export default function styles() {
 		.pipe(gulpif(!PRODUCTION, sourcemaps.init()))
 		.pipe(
 			sass({
-				outputStyle: 'compact',
+				outputStyle: 'compressed',
 				errLogToConsole: true,
 				indentedSyntax: true,
 			})

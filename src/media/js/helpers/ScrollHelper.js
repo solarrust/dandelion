@@ -1,5 +1,5 @@
 var dom = require('../utils/DOM');
-import ScrollToPlugin from 'gsap/ScrollToPlugin';
+import ScrollToPlugin from 'gsap/ScrollToPlugin'; // eslint-disable-line
 
 function ScrollHelper() {
 	this.$scrollTarget = dom.$window;

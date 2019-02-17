@@ -18,6 +18,7 @@
 		{{ headScripts() }}
 
 		{% block stylesheets %}
+			<link rel="preload" href="media/css/screen.css?hash" as="style">
 			<link rel="stylesheet" href="media/css/screen.css?hash" />
 		{% endblock stylesheets %}
 	</head>

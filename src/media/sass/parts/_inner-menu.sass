@@ -5,16 +5,24 @@
 
 .inner-menu
 	+box
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
 	color: #000
 	background-color: $light-gray
 	transition: transform 0.3s ease-out
 	transform: translateY(0)
 	will-change: transform
+	& > .menu,
+	& > .progress
+		opacity: 0
+		transition: opacity 0.3s
+	& > .menu._visible,
+	& > .progress._visible
+		opacity: 1
 	&._active
 		position: fixed
-		top: 0
-		left: 0
-		right: 0
 		z-index: 9
 		&._scrolled
 			transform: translateY(calc(-100% + 2px))

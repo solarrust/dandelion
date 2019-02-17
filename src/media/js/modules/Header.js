@@ -1,6 +1,7 @@
 var dom = require('../utils/DOM');
 var env = require('../utils/ENV');
 
+var $header = $('.header');
 var $target = $('[data-hide-on-scroll]');
 var $progress = $('.progress');
 var $el = $('[data-text]:first'),
@@ -12,23 +13,27 @@ $progress.width(0);
 
 function HeaderHelper() {
 	dom.$window.on('scroll', () => {
-		if (dom.$window.scrollTop() > $('header').outerHeight()) {
-			$target.addClass('_active');
-			if (env.isMobile) {
-				$('.solutions').css({ paddingTop: '175px' });
-			} else {
-				$('.solutions').css({ paddingTop: '213px' });
-			}
+		// if (!env.isMobile) {
+		// 	if (dom.$window.scrollTop() > $header.outerHeight() - 35) {
+		// 		$target.children().addClass('_visible');
+		// 	} else {
+		// 		$target.children().removeClass('_visible');
+		// 	}
+		// }
+
+		if (dom.$window.scrollTop() > $header.outerHeight() - 35) {
+			$target.children().addClass('_visible');
 		} else {
-			$target.removeClass('_active');
-			if (env.isMobile) {
-				$('.solutions').css({ paddingTop: '80px' });
-			} else {
-				$('.solutions').css({ paddingTop: '110px' });
-			}
+			$target.children().removeClass('_visible');
 		}
 
-		var width = dom.$window.scrollTop() / (dom.$document.height() - $(window).height());
+		if (dom.$window.scrollTop() > $header.outerHeight()) {
+			$target.addClass('_active');
+		} else {
+			$target.removeClass('_active');
+		}
+
+		var width = dom.$window.scrollTop() / (dom.$document.height() - dom.$window.height());
 
 		$progress.css({
 			width: ((100 * width) | 0) + '%',
@@ -58,6 +63,10 @@ function HeaderHelper() {
 							.fadeIn(words[i].length > 3 ? words[i].length * 85 : 250);
 					});
 			}
+		}
+
+		if (env.isMobile) {
+			$header.css({ height: dom.$window.height() });
 		}
 	});
 	dom.$window.on('resize', () => {

@@ -1,5 +1,5 @@
 <div class="inner-menu" data-hide-on-scroll>
-	<nav class="header__menu menu">
+	<div class="header__menu menu">
 		<div class="menu__logo">
 			<svg><use xlink:href="#icon-logo-black"></use></svg>
 		</div>
@@ -25,6 +25,6 @@
 				<a href="#" class="menu__link" data-popup-opener="contact-form-3">free consultation</a>
 			</div>
 		</div>
-	</nav>
+	</div>
 	<div class="progress" aria-hidden="true"></div>
 </div>

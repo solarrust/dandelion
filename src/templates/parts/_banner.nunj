@@ -5,7 +5,7 @@
 	<div class="section__content">
 		<h2 class="banner__title">
 			<span class="_block-highlight">Wanna Be</span>
-			The Next Big Thing
+			The Next Big Thing?
 		</h2>
 		<p class="banner__text text">In&nbsp;just 2&nbsp;years we&nbsp;helped our clients raise more than $650 million dollars!</p>
 		<button class="btn-connect banner__btn btn" data-popup-opener="contact-form-2">connect with us</button>

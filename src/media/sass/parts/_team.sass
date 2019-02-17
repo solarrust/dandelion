@@ -7,20 +7,24 @@
 		@extend .no-scroll
 		display: flex
 		flex-wrap: wrap
+		&._mobile
+			display: none
 	&__member
+		max-width: 85vw
 		flex-basis: 50%
 		&:not(:nth-last-child(-n+2))
 			margin-bottom: 60px
 	+max-screen($breakpoint-md)
 		padding: 70px 0
 		&__members
-			flex-direction: column
-			overflow-x: scroll
-			max-height: calc(190px * 4)
-			margin-left: -60px
-			margin-right: -60px
-			padding-left: 60px
-			padding-right: 60px
+			display: none
+			&._mobile
+				display: block
+				flex-direction: column
+				max-height: calc(190px * 4)
+				margin-left: 50px
+				& .members-col
+					margin-right: 60px
 		&__member
 			flex-basis: auto
 			width: 465px
@@ -32,24 +36,13 @@
 	+max-screen($breakpoint-sm)
 		& .section__title
 			left: -90px
-		&__members
-			margin-left: -20px
-			margin-right: -20px
-			padding-right: 20px
-			&.ps.ps--active-x
-				& > .ps__rail-x
-					+box
-					display: block !important
-					opacity: 1 !important
-					height: 2px
-					background-color: rgba($blue, 0.3)
-					& > .ps__thumb-x
-						bottom: 0
-						height: 2px
-						background-color: $blue
+		&__members._mobile
+			margin-left: 40px
+			& .members-col
+				margin-right: 20px
 		&__member
-				width: 350px
-				height: 105px
+			width: 350px
+			height: 105px
 
 .member
 	display: flex

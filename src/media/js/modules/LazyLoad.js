@@ -62,7 +62,7 @@ LazyLoad.prototype = {
 
 	_loadImage($element, src) {
 		$element.addClass(LOADING);
-		$element.on('load', e => {
+		$element.on('load', () => {
 			TweenMax.fromTo($element.removeClass(LOADING), 0.5, { alpha: 0 }, { alpha: 1, delay: Math.random() / 4 });
 			this.onLoad.call();
 		});
