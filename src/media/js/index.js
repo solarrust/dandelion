@@ -26,6 +26,7 @@ global.ProjectName = new function ProjectName() { // eslint-disable-line
 		Clients: require('./modules/Clients'),
 		HideOnScrolls: require('./modules/HideOnScrolls'),
 		SlickSliders: require('./modules/SlickSliders'),
+		PageEffects: require('./modules/PageEffects'),
 	};
 
 	// Startup

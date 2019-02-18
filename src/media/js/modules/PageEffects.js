@@ -90,7 +90,7 @@ PageEffects.prototype = {
 				function(state, target) {
 					if (state) {
 						ShowHelper2.unwatch(target);
-						TweenMax.fromTo(target, 0.5, { y: 10, alpha: 0 }, { y: 0, alpha: 1, delay: 0.15 });
+						TweenMax.fromTo(target, 0.75, { y: 25, alpha: 0 }, { y: 0, alpha: 1, delay: 0.15 });
 					}
 				},
 				true,

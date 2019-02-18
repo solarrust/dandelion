@@ -20,12 +20,12 @@ function HeaderHelper() {
 		// 		$target.children().removeClass('_visible');
 		// 	}
 		// }
-
-		if (dom.$window.scrollTop() > $header.outerHeight() - 35) {
-			$target.children().addClass('_visible');
-		} else {
-			$target.children().removeClass('_visible');
-		}
+		//
+		// if (dom.$window.scrollTop() > $header.outerHeight() - 35) {
+		// 	$target.children().addClass('_visible');
+		// } else {
+		// 	$target.children().removeClass('_visible');
+		// }
 
 		if (dom.$window.scrollTop() > $header.outerHeight()) {
 			$target.addClass('_active');

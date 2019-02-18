@@ -54,7 +54,7 @@ export const config = {
 	devtool: PRODUCTION ? false : '#eval',
 	mode: PRODUCTION ? 'production' : 'development',
 	optimization: {
-		minimize: true,
+		minimize: PRODUCTION,
 	},
 	watch: !PRODUCTION && !hmrEnabled,
 };
