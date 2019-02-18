@@ -1,6 +1,6 @@
 {% macro teamListMobile(team) %}
 	<div class="team__members _mobile" data-slider-slides>
-	{% for members_col in team | batch(4, '&nbsp;') %}
+	{% for members_col in team | batch(3, '&nbsp;') %}
 		<div class="members-col">
 			{% for member in members_col %}
 				{% if member.photo %}
