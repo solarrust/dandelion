@@ -5,24 +5,24 @@
 		</div>
 		<nav class="menu__block menu__item nav">
 			<div class="nav__item">
-				<a href="#" class="nav__link menu__link" data-scroll-to='.solution'>solution</a>
+				<a class="nav__link menu__link" data-scroll-to='.solution'>solution</a>
 			</div>
 			<div class="nav__item">
-				<a href="#" class="nav__link menu__link" data-scroll-to=".clients">clients</a>
+				<a class="nav__link menu__link" data-scroll-to=".clients">clients</a>
 			</div>
 			<div class="nav__item">
-				<a href="#" class="nav__link menu__link" data-scroll-to=".tariffs">plans</a>
+				<a class="nav__link menu__link" data-scroll-to=".tariffs">plans</a>
 			</div>
 			<div class="nav__item">
-				<a href="#" class="nav__link menu__link" data-scroll-to=".team">team</a>
+				<a class="nav__link menu__link" data-scroll-to=".team">team</a>
 			</div>
 		</nav>
 		<div class="menu__block sub-nav">
 			<div class="sub-nav__item menu__item">
-				<a href="#" class="menu__link _reg" data-scroll-to=".footer">contacts</a>
+				<a class="menu__link _reg" data-scroll-to=".footer">contacts</a>
 			</div>
 			<div class="sub-nav__item menu__item">
-				<a href="#" class="menu__link" data-popup-opener="contact-form-3">free consultation</a>
+				<a class="menu__link" data-popup-opener="contact-form-3">free consultation</a>
 			</div>
 		</div>
 	</div>

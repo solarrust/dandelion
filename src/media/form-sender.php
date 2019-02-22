@@ -5,6 +5,7 @@ if(isset($_POST['email'])) {
     // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "solar.rust@gmail.com";
     $email_subject = "Пользователь заполнил форму на сайте";
+    $email_client_subject = "Вы заполнили форму на сайте Dandelion Seed";
 
     function died($error) {
         // your error code can go here
@@ -21,6 +22,7 @@ if(isset($_POST['email'])) {
     $site = $_POST['site']; // not required
 
     $email_message = "Данные, которые оставил пользователь.\n\n";
+    $email_client_message = "Данные, которые вы указали.\n\n";
 
     function clean_string($string) {
       $bad = array("content-type","bcc:","to:","cc:","href");
@@ -32,11 +34,22 @@ if(isset($_POST['email'])) {
     $email_message .= "Телефон: ".clean_string($telephone)."\n";
     $email_message .= "Сайт: ".clean_string($site)."\n";
 
+    $email_client_message .= "Имя: ".clean_string($name)."\n";
+		$email_client_message .= "Email: ".clean_string($email_from)."\n";
+		$email_client_message .= "Телефон: ".clean_string($telephone)."\n";
+		$email_client_message .= "Сайт: ".clean_string($site)."\n";
+
 // create email headers
+$client_headers = 'From:'.$email_to."\r\n".
+'Reply-To: '.$email_to."\r\n" .
+'X-Mailer: PHP/' . phpversion();
+
 $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
 'X-Mailer: PHP/' . phpversion();
 @mail($email_to, $email_subject, $email_message, $headers);
+
+@mail($email_from, $email_client_subject, $email_client_message, $client_headers);
 ?>
 
 <?php
